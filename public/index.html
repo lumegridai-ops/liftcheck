@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Check a saved station path against elevator closures, with current sources and independently checked alternatives.">
+  <title>LiftCheck — Check the way in</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to station check</a>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="LiftCheck home"><span class="brand-mark" aria-hidden="true">↗</span> LiftCheck</a>
+    <div class="header-meta"><span class="dot"></span> Boston station access <span class="prototype">Working prototype</span></div>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">BEFORE YOU LEAVE</p><h1 id="page-title">Check the way in.</h1><p class="lede">Your entrance. Your platform. The elevators between them.</p></div>
+      <div class="intro-note"><span class="note-number">01 / 03</span><p>Choose a station path.<br>Check current reports.<br>See what an alternative depends on.</p></div>
+    </section>
+    <div class="workspace">
+      <aside class="planner" aria-label="Plan your station check">
+        <section class="panel form-panel">
+          <div class="panel-heading"><h2>Your station path</h2><span class="tiny-tag">3 stations</span></div>
+          <form id="check-form">
+            <label for="station">Station</label><select id="station" name="station" required></select>
+            <label for="entrance">Street entrance</label><select id="entrance" name="entrance" required></select>
+            <label for="platform">Platform &amp; direction</label><select id="platform" name="platform" required></select>
+            <fieldset class="direction"><legend>I’m…</legend><label><input type="radio" name="direction" value="boarding" checked> Boarding</label><label><input type="radio" name="direction" value="exiting"> Exiting</label></fieldset>
+            <button id="check-live" class="primary" type="submit">Check current reports <span aria-hidden="true">↗</span></button>
+            <p class="form-note">Reports cover mapped station paths. A missing closure report does not confirm an elevator is working.</p>
+          </form>
+          <button id="add-leg" class="text-button" type="button">+ Add this check to a saved journey</button>
+          <form id="save-form" class="save-form" hidden>
+            <ol id="pending-legs"></ol>
+            <label for="journey-name">Journey name</label><input id="journey-name" required maxlength="80" placeholder="e.g. My usual morning">
+            <div class="button-row"><button type="submit" class="secondary">Save journey</button><button type="button" id="clear-pending" class="text-button">Clear</button></div>
+          </form>
+        </section>
+        <section class="panel saved-panel"><h2>Saved journeys</h2><div id="saved-list"><p class="muted">Loading saved journeys…</p></div></section>
+        <details class="connection"><summary>Use with an AI assistant</summary><p>Connect an MCP client to this local server, then ask it to check a station path. Every check on this page runs through those same MCP tools.</p><code id="mcp-address"></code><p class="muted">Working MCP integration. Alexa device testing has not been performed.</p></details>
+      </aside>
+      <section class="results-area" aria-label="Station check results">
+        <div class="result-toolbar"><span id="source-pill" class="source-pill">Ready to check</span><button id="export" class="text-button" disabled type="button">Download evidence ↓</button></div>
+        <div id="error" class="error" role="alert" hidden></div>
+        <div id="results" aria-live="polite" aria-busy="false">
+          <section class="empty-state">
+            <div class="route-illustration" aria-hidden="true"><span class="route-point">A</span><span class="route-stroke"></span><span class="lift-point">↕</span><span class="route-stroke short"></span><span class="route-point">B</span></div>
+            <p class="eyebrow">THE WHOLE STATION PATH MATTERS</p><h2>A different entrance can change everything.</h2><p>Start with the entrance and platform you use. LiftCheck traces the mapped connections and checks each elevator against the latest reports it can fetch.</p>
+            <div class="empty-facts"><span>Directed station paths</span><span>Every elevator rechecked</span><span>Sources you can inspect</span></div>
+          </section>
+        </div>
+        <section class="replay-panel" aria-labelledby="replay-title">
+          <div><p class="eyebrow">TRY THE FAILURE CASE</p><h2 id="replay-title">When the alternative also closes.</h2><p>A real Assembly station map with invented outages. These controls run a demonstration, separate from current reports.</p></div>
+          <div class="replay-buttons" role="group" aria-label="Synthetic Assembly outage scenarios">
+            <button type="button" data-scenario="clear">1 <span>No closures</span></button>
+            <button type="button" data-scenario="primary">2 <span>Close elevator 717</span></button>
+            <button type="button" data-scenario="both">3 <span>Also close 719</span></button>
+            <button type="button" data-scenario="stale">4 <span>Expire the feed</span></button>
+          </div>
+          <p class="replay-footnote">Synthetic alerts • Fixed September 26, 2026 replay • No claim of a current Assembly outage</p>
+        </section>
+      </section>
+    </div>
+    <footer><p>Transportation data provided by <a href="https://www.mass.gov/massdot-developers-data-sources" target="_blank" rel="noopener noreferrer">MassDOT / MBTA</a>. LiftCheck is independent and is not endorsed by the data provider.</p><p>Prototype coverage: Assembly, State and Malden Center. This checks mapped stair-free station connections, not sidewalks, gate width, slopes, boarding assistance or train operation. For current assistance and official guidance, use <a href="https://www.mbta.com/accessibility" target="_blank" rel="noopener noreferrer">MBTA accessibility information</a>.</p></footer>
+  </main>
+</body>
+</html>

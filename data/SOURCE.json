@@ -1,0 +1,28 @@
+{
+  "publisher": "Massachusetts Bay Transportation Authority (MBTA), MassDOT",
+  "url": "https://cdn.mbta.com/MBTA_GTFS.zip",
+  "fetchedAt": "2026-09-26T16:14:59.039026+00:00",
+  "lastModified": "Thu, 24 Sep 2026 19:26:32 GMT",
+  "sha256": "e3fdffe291bbe715d09356c1f2ceb58c8fc0781478e4041ba46160d964723133",
+  "feedVersion": "Fall 2026, 2026-09-24T17:51:42+00:00, version D",
+  "feedStartDate": "20260917",
+  "feedEndDate": "20261212",
+  "documentationUrl": "https://github.com/mbta/gtfs-documentation/blob/master/reference/gtfs.md#pathwaystxt",
+  "attribution": "Contains MBTA/MassDOT data. Independently developed; not an official MBTA product. No guarantee of completeness or current physical accessibility.",
+  "selectedStationIds": [
+    "place-astao",
+    "place-state",
+    "place-mlmnl"
+  ],
+  "fileHashes": {
+    "stops.txt": "873b3f752f4e8f0aefaccf4b941e7634f5388a8e531880d906b779c07fdb003e",
+    "pathways.txt": "e12c8edc5b017ce4379fe3f9bf56fe2809649678032133c88a88e9622ab3869c",
+    "facilities.txt": "65acd445ba345c055655fee09b8aa63ae15cf8d5d2644358c78199325649bfc3",
+    "feed_info.txt": "83ee84ce89f85a21bd8e87c731be50173f41d6924079eab4178e3da4a80a6631",
+    "routes.txt": "e06cfdaa1feb0a3e4c9acaa907e0c48b29a875bcbc112d2f312b40b3288de582",
+    "trips.txt": "f280ff7cbe6f9742e5e46bdf3c1afa5241ee5c471db747921434ef6eed8c6606",
+    "stop_times.txt": "3f3f86ad8abb565c58ba83e1a64d460a6d063c15f54b143e9a42a4a3f43c6407"
+  },
+  "facilityResponseSha256": "d7df2d9ac72e474da62d19b3cb1195dd2e621c67abeb2a817c0e184ef086f542",
+  "facilitySourceUrl": "https://api-v3.mbta.com/facilities"
+}
