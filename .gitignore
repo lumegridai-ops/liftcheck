@@ -10,3 +10,4 @@ artifacts/live-browser.png
 .DS_Store
 *.tmp
 __pycache__/
+.devpost-hackathon-state.json
