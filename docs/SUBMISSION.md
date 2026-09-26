@@ -1,6 +1,10 @@
 # Prepared Amazon entry — LiftCheck
 
-Status: source and working prototype prepared. No new Devpost draft or submission has been created. Public YouTube/Vimeo hosting, registration declarations and actual submission remain outstanding. User authorization to submit has been given; required unknown personal facts have not been invented.
+Status: source, working prototype and public video prepared. No new Devpost draft or submission has been created. Registration declarations and actual submission remain outstanding. User authorization to submit has been given; required unknown personal facts have not been invented.
+
+Repository: https://github.com/lumegridai-ops/liftcheck
+
+Public demonstration: https://www.youtube.com/watch?v=agZEp9xEJXY (97.92 seconds; public publication confirmed in YouTube Studio).
 
 **Name:** LiftCheck
 
@@ -53,6 +57,6 @@ We built a real SDK transport test to verify negotiation of the specified protoc
 - Working repository with open-source code license, provider-data license, setup/run instructions and verification evidence: prepared.
 - Actual runtime hook to required track technology: implemented and tested through the MCP SDK and visible client.
 - Less-than-three-minute demonstration of the working product: local recording prepared by scripts/record-demo.mjs; inspect its manifest for the actual final duration.
-- Public YouTube or Vimeo URL: not yet supplied. A local file or GitHub download does not satisfy this requirement.
+- Public YouTube URL: https://www.youtube.com/watch?v=agZEp9xEJXY — published September 26, 2026.
 - Required personal registration/submission declarations: unresolved facts remain unfilled.
 - Official submission confirmation: none. Do not describe this entry as submitted.

@@ -25,7 +25,7 @@ The map-refresh path was run against the captured real archive into a separate t
 
 `artifacts/liftcheck-demo.mp4` is a **97.92-second** actual automated browser recording with synthetic narration. The recording completed without browser errors. Its captured MCP trace contains 12 responses, including protocol negotiation, current-source path and saved-journey checks, and the three synthetic failure scenarios. The observed replay sequence is alternate_entrance → blocked → unknown. The entire encoded file was decoded successfully with ffmpeg, and an extracted replay frame was inspected visually. SHA-256: `a046e706ef8de2184ad55f022359914438dd1fde266fb9e9b11d59384d1d4ef8`.
 
-The trace and media manifest preserve actual sources, source modes, requests and outputs. Synthetic narration does not impersonate a rider or Alexa. This local/GitHub-download artifact still needs public YouTube/Vimeo hosting for the official Amazon entry.
+The trace and media manifest preserve actual sources, source modes, requests and outputs. Synthetic narration does not impersonate a rider or Alexa. The recording was published publicly to [YouTube](https://www.youtube.com/watch?v=agZEp9xEJXY) on September 26, 2026; Studio confirmed publication after Public was selected. The description preserves the source/replay and integration limits. Contest registration and submission remain separate and incomplete.
 
 ## Findings fixed
 

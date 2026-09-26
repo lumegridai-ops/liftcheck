@@ -6,6 +6,8 @@ LiftCheck combines public MBTA station pathways with current service and equipme
 
 The working prototype covers **Assembly, State and Malden Center**. It checks mapped entrance→platform or platform→exit connections. It does not plan an entire transit journey or certify accessibility.
 
+[Watch the 98-second working demonstration on YouTube](https://www.youtube.com/watch?v=agZEp9xEJXY), or [download the original recording](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.1.0). The recording distinguishes current-source checks from synthetic outage replays and uses disclosed synthetic narration. This project has not yet been submitted to the hackathon.
+
 ## Run it
 
 Node.js 22 or newer is required. No model key or MBTA API key is needed for the current low-volume experiment.
