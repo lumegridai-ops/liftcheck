@@ -11,3 +11,12 @@ artifacts/live-browser.png
 *.tmp
 __pycache__/
 .devpost-hackathon-state.json
+artifacts/widescreen-recording/frames/
+artifacts/widescreen-recording/frames.ffconcat
+artifacts/narration/*.wav
+
+artifacts/*-4k.mp4
+artifacts/widescreen-recording/review/
+artifacts/widescreen-recording/final-edit/*.png
+
+artifacts/presentation-source.zip

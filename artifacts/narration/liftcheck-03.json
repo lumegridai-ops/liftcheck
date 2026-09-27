@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-27T03:18:53Z",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Confident, thoughtful and conversational; brisk natural pacing, about 165 words per minute. Natural emphasis on the consequence of each action. No sales voice and no theatrical pauses. Speak only the exact transcript.",
+  "text": "Now switch to current M B T A reports. Pick the entrance and platform you actually use. Results show mapped facilities, source times, and any missing evidence.",
+  "seconds": 11.12,
+  "sample_rate": 24000,
+  "sha256": "18864ab2874ccc168eb3f14ec92e70d2c82d9e35186bc580e12e831c574261f0",
+  "elapsed_seconds": 5.14,
+  "usage": {
+    "total_tokens": 389,
+    "total_input_tokens": 33,
+    "input_tokens_by_modality": [
+      {
+        "modality": "text",
+        "tokens": 33
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 356,
+    "output_tokens_by_modality": [
+      {
+        "modality": "audio",
+        "tokens": 356
+      }
+    ],
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 401,
+    "model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 147
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 280
+          }
+        ]
+      }
+    ],
+    "non_grounding_model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 147
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 280
+          }
+        ]
+      }
+    ]
+  },
+  "provider": "Google Gemini API",
+  "synthetic": true
+}

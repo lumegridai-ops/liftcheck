@@ -1,0 +1,60 @@
+
+> liftcheck@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ real Assembly baseline has the Foley chain, and a linked directed path (7.157584ms)
+✔ one closure changes entrance and a second closure withdraws the fallback (0.817792ms)
+✔ closure of an unrelated Assembly elevator does not invalidate Foley (0.267584ms)
+✔ return direction uses actual reverse edges and proposes another exit (0.215166ms)
+✔ directed graph does not acquire invented reverse edges (1.37525ms)
+✔ source metadata and only supported platforms appear in catalog (0.205792ms)
+✔ stale, future and incomplete snapshots produce no path or alternative (0.166792ms)
+✔ Date and epoch inputs preserve explicit freshness evidence (0.144084ms)
+✔ future and ended alerts are not current closures; open-ended and start-inclusive ones are (0.423625ms)
+✔ alert updated_at age is not response freshness; timezone offsets are honored (0.173333ms)
+✔ closed alert is inactive and every active-period interval is evaluated (0.206042ms)
+✔ malformed relevant alert windows cannot silently clear the affected path (0.91225ms)
+✔ unknown effect and unscoped elevator closure require verification (0.712875ms)
+✔ no usable entity scope or malformed selector fields fail closed (0.405083ms)
+✔ missing elevator-to-facility mapping is unknown when the other chain is closed (1.709375ms)
+✔ missing facility record and unexpected pathway mode cannot support a clear path (2.561334ms)
+✔ stairs, escalators, stair_count, and inaccessible nodes cannot become a workaround (3.883ms)
+✔ unsupported station, wrong platform station, and inaccessible entrance return unknown (0.122291ms)
+✔ graph feed validity is checked in Boston local time (1.431ms)
+✔ route and direction intersections avoid unrelated closures (0.581292ms)
+✔ a station closure applies to all entrances; specific entrance closure permits another (0.185459ms)
+✔ boarding-only closure does not affect the same platform exit check (0.178167ms)
+✔ delay remains visible without claiming it closes a physical station path (0.102083ms)
+✔ official URLs never imply that injected replay alerts are official (0.207292ms)
+✔ different alternative entrance alerts are independently respected (0.130459ms)
+✔ malformed graph references are rejected during network loading (0.902792ms)
+✔ review: every page is included and old alert updated_at does not age a fresh fetch (2.531125ms)
+✔ review: pagination cannot silently narrow alert coverage to one stop (0.299459ms)
+✔ review: a malformed links object cannot certify the end of pagination (0.120708ms)
+✔ review: malformed end markers cannot certify completeness (0.202333ms)
+✔ review: skipped page offsets cannot certify completeness (0.146625ms)
+✔ review: cross-origin pagination is rejected before following the link (0.101709ms)
+✔ review: overlapping pages cannot become a complete mixed snapshot (0.178792ms)
+✔ review: cached data from a failed refresh remains incomplete at and after expiry (0.319042ms)
+✔ review: one failed later page cannot leak a partial new snapshot as complete (0.1595ms)
+✔ review: caller mutation cannot change a saved journey without a revision (1.746916ms)
+✔ review: directed paths stay directed, and every alternate elevator is checked (11.189041ms)
+✔ review: planned closure activates on its start and stops exactly at its end (0.380416ms)
+✔ review: incomplete, stale, future-dated and uncovered-date evidence cannot clear a leg (0.162708ms)
+✔ review: malformed relevant service/activity selectors cannot hide a station closure (0.404708ms)
+✔ review: an opposite direction advisory is not attached to the selected platform (0.12175ms)
+✔ review: unknown effects and malformed active periods stay unresolved (1.377333ms)
+✔ review: a missing elevator mapping and an escalator-only connection are not a clear path (0.399292ms)
+✔ review: an elevator edge cannot borrow a different station or escalator facility mapping (0.198959ms)
+✔ review: service preserves saved legs, rejects stale writes, and uses one snapshot for a journey (2.684959ms)
+✔ review: local HTTP boundary rejects foreign origins and keeps malicious labels as JSON data (34.134834ms)
+✔ MCP negotiates 2025-11-25 and a discovered tool flow persists across restart (91.022792ms)
+✔ local HTTP rejects hostile origins, hosts, invented endpoints and unbounded bodies (12.233958ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 316.293833

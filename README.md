@@ -6,7 +6,7 @@ LiftCheck combines public MBTA station pathways with current service and equipme
 
 The working prototype covers **Assembly, State and Malden Center**. It checks mapped entrance→platform or platform→exit connections. It does not plan an entire transit journey or certify accessibility.
 
-[Watch the 98-second working demonstration on YouTube](https://www.youtube.com/watch?v=agZEp9xEJXY), or [download the original recording](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.1.0). The recording distinguishes current-source checks from synthetic outage replays and uses disclosed synthetic narration. This project has not yet been submitted to the hackathon.
+The **v0.2.0** interface and demonstration are prepared. The new approximately **78.37-second** demo uses native **3840×2160** browser captures, 30fps video delivery and disclosed **Google Gemini synthetic narration**. It starts with labeled invented outages, then switches to actual current reports, saved-journey persistence and the working MCP connection. [Timed captions](artifacts/liftcheck-demo-4k.srt) and the [recording manifest](artifacts/widescreen-demo-manifest.json) accompany the local master at `artifacts/liftcheck-demo-4k.mp4`. [Watch the public 4K demo](https://www.youtube.com/watch?v=jHp5xAW9RQM) or [download the master and source media](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.2.0). **No Devpost entry has been created.**
 
 ## Run it
 
@@ -19,7 +19,9 @@ npm start
 
 Open **http://127.0.0.1:4322**. The server binds to loopback. It is a single-user local prototype; it must not be exposed publicly without authentication, tenant separation and an operating/rate-limit plan.
 
-Choose Assembly → Foley St → Orange Line / Forest Hills, then check current reports. Select “Exiting” to evaluate the actual reverse direction. Save multiple station legs under an explicit name to check them together against one snapshot.
+Choose Assembly → Foley St → Orange Line / Forest Hills, then check current reports. Select “Exiting” to evaluate the actual reverse direction. Save multiple station legs under an explicit name to check them together against one snapshot. Draft checks can be edited, removed and reordered. **Use as draft** copies a saved journey into a new draft; saving it creates another journey rather than overwriting the original.
+
+The redesigned interface puts the station, exact endpoints, status and source age together. Its elevator dependency sequence becomes vertical on phones. Replay labels appear on the report, inside each result card and on its path diagram. See the [design research and browser review](docs/DESIGN_REVIEW.md) for screenshots, the tested interactions and accessibility-review limits.
 
 The four replay controls demonstrate the failure case without changing live data: no injected closure; elevator 717 closed; both 717 and alternate 719 closed; expired evidence. **All replay outages are invented**, use a fixed September 26, 2026 evaluation time, and are visibly labeled. A live check independently fetches current alerts.
 
@@ -30,7 +32,7 @@ The four replay controls demonstrate the failure case without changing live data
 - **Blocked:** reported closures prevent the selected mapped path, with no checked alternative found.
 - **Unknown:** evidence is incomplete, expired, malformed or outside the supported coverage.
 
-Stairs and escalators are excluded. The routing objective is fewest mapped edges, not shortest distance. The page shows facilities, source reports, map provenance and limits; a JSON download includes the complete calculation evidence. Results expire visibly after five minutes. Successful alert responses are shared for 60 seconds, and a failed refresh cannot convert missing records into reassurance.
+Stairs and escalators are excluded. The routing objective is fewest mapped edges, not shortest distance. The page shows facilities, source reports, map provenance and limits; a JSON download includes the complete calculation evidence. After five minutes, live evidence expires visibly: its usable path diagram and former positive summary are withdrawn, while the dated evidence remains available to inspect. Successful alert responses are shared for 60 seconds, and a failed refresh cannot convert missing records into reassurance.
 
 ## MCP integration
 
@@ -53,7 +55,7 @@ Example configuration for a client that supports remote HTTP MCP servers:
 
 Client configuration formats vary. A useful prompt is: “Find Assembly's Foley Street entrance and Forest Hills platform in the catalog. Check that path using current reports. Explain every limitation and do not call the station accessible.”
 
-This is a functioning MCP server intended for the Amazon Alexa+ hackathon track. **No Alexa device, voice conversation, account-linked add-on or deployed remote Alexa connection has been tested.** The page is a visual MCP client, not a claimed Alexa simulation. No LLM inference occurs inside this repository; the connecting assistant supplies that layer.
+This is a functioning MCP server intended for the Amazon Alexa+ hackathon track. **No Alexa device, voice conversation, account-linked add-on or deployed remote Alexa connection has been tested.** The page is a visual MCP client, not a claimed Alexa simulation. No model decides station-path status in the application; a connecting assistant supplies the conversational layer. Gemini text-to-speech is used separately to produce the demonstration narration.
 
 ## Verify
 
@@ -63,9 +65,9 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-The initial release passes 48 Node tests and five browser stories. Tests include a real SDK client over HTTP, restart persistence, double-outage withdrawal, alert pagination and malformed-data counterexamples. Browser fixture checks are synthetic and labeled; the separate live-source/browser observation is documented in docs/QA.md.
+The redesigned **v0.2.0** interface passes the existing **48 Node tests and five browser stories**. Tests include a real SDK client over HTTP, restart persistence, double-outage withdrawal, alert pagination and malformed-data counterexamples. Browser fixture checks are synthetic and labeled; separate actual live-source observations and the revised demonstration are documented in [the verification record](docs/QA.md).
 
-Read docs/ENGINE.md for exact graph/alert semantics and docs/REVIEW.md for the independent reviewer’s findings and fixes. Passing checks are engineering evidence, not rider validation or a competitive benchmark.
+Read [the engine notes](docs/ENGINE.md) for exact graph/alert semantics, [the independent review](docs/REVIEW.md) for findings and fixes, and [the interface review](docs/DESIGN_REVIEW.md) for manual draft-flow, keyboard, contrast and 390px/320px checks. Passing checks are engineering evidence, not rider validation, complete accessibility certification or a competitive benchmark.
 
 ## Data and storage
 
@@ -80,4 +82,8 @@ Restart the app after refreshing. To reproduce a captured archive, use `python3 
 
 Saved journeys live under `runtime/` by default, which is excluded from Git. Set `LIFTCHECK_DATA_DIR` to change it. A single-writer lock prevents two servers from writing the same data. If a process is forcibly killed, remove its `.lock` only after confirming no LiftCheck process is using that directory. Writes use a private temporary file and atomic rename; storage is not a multi-user database.
 
-Code is MIT. Transportation data has its own provider license and attribution in data/NOTICE.md. All design and implementation were produced with AI assistance during September 26, 2026; no invented users, physical station survey or customer endorsement is claimed.
+Code is MIT. Transportation data has its own provider license and attribution in [data/NOTICE.md](data/NOTICE.md); the self-hosted IBM Plex font includes its [OFL license](public/fonts/OFL.txt). All design and implementation were produced with AI assistance during September 26, 2026; no invented users, physical station survey or customer endorsement is claimed.
+
+## Entry readiness
+
+This is a prepared Alexa+ track project, not a registered or submitted entry. Registration requires the outstanding rules and eligibility agreement. See the [prepared entry text](docs/SUBMISSION.md). No Alexa-device onboarding or account-linked integration is claimed.

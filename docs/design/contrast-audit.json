@@ -1,0 +1,9 @@
+{
+  "method": "Read-only computed-style luminance check for visible direct-text nodes. Disabled buttons excluded. Nearest opaque ancestor background; no image backgrounds or gradients. A narrow check, not full WCAG conformance.",
+  "thresholds": {
+    "normalText": 4.5,
+    "largeText": 3
+  },
+  "initialFailures": [],
+  "replayFailures": []
+}

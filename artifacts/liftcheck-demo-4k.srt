@@ -1,0 +1,100 @@
+1
+00:00:00,000 --> 00:00:01,412
+An elevator is closed.
+
+2
+00:00:01,412 --> 00:00:03,273
+The workaround uses two more.
+
+3
+00:00:03,273 --> 00:00:05,520
+What if one of those is closed too?
+
+4
+00:00:06,170 --> 00:00:08,502
+LiftCheck checks the mapped station path.
+
+5
+00:00:08,502 --> 00:00:13,848
+In this labeled replay, closing Assembly's Foley Street elevator
+reveals a different entrance.
+
+6
+00:00:13,848 --> 00:00:17,090
+Its two elevators are checked as part of the alternative.
+
+7
+00:00:17,990 --> 00:00:21,535
+Close the second one, and the alternative disappears.
+
+8
+00:00:21,535 --> 00:00:24,946
+Expire the reports, and the answer becomes unknown.
+
+9
+00:00:24,946 --> 00:00:26,350
+No stale green light.
+
+10
+00:00:27,250 --> 00:00:29,941
+Now switch to current M B T A reports.
+
+11
+00:00:29,941 --> 00:00:33,341
+Pick the entrance and platform you actually use.
+
+12
+00:00:33,341 --> 00:00:38,370
+Results show mapped facilities, source times, and any missing
+evidence.
+
+13
+00:00:39,270 --> 00:00:41,123
+Save those choices as a journey.
+
+14
+00:00:41,123 --> 00:00:42,976
+Reload, and they're still there.
+
+15
+00:00:42,976 --> 00:00:49,230
+Up to four station checks share one alert snapshot, instead of
+mixing evidence collected at different times.
+
+16
+00:00:50,131 --> 00:00:53,495
+These are real calls to our self-hosted M C P server.
+
+17
+00:00:53,495 --> 00:00:58,891
+The browser and the assistant-facing tools use the same path
+logic and saved context.
+
+18
+00:00:59,790 --> 00:01:04,214
+The prototype covers three stations and checks published
+reports.
+
+19
+00:01:04,214 --> 00:01:06,663
+It does not certify physical access.
+
+20
+00:01:06,663 --> 00:01:10,270
+Alexa device use and rider testing remain unverified.
+
+21
+00:01:11,171 --> 00:01:11,845
+LiftCheck.
+
+22
+00:01:11,845 --> 00:01:12,856
+Check the path.
+
+23
+00:01:12,856 --> 00:01:14,407
+Recheck the workaround.
+
+24
+00:01:14,407 --> 00:01:17,171
+Source and reproducible tests are linked.

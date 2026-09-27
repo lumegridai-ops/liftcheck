@@ -1,0 +1,35 @@
+{
+  "source": "../frames/frames.json",
+  "edits": [
+    {
+      "file": "/Users/matt/hackathon/liftcheck/artifacts/widescreen-recording/final-edit/focus-2.png",
+      "at": 2.83,
+      "sha256": "a265bce1cbbcd8c3a95dc625b71975a1d53eec6ff7a8caee65b47b083e2e6ae9",
+      "width": 3840,
+      "height": 2160,
+      "edit": "1.33x editorial crop of native 4K source; source label and outdoor-approach warning retained",
+      "original_sha256": "68085619aacd040424404d31d857cf4b203332d811b15930998ed18b9acb3996"
+    },
+    {
+      "file": "/Users/matt/hackathon/liftcheck/artifacts/widescreen-recording/frames/frame-00003.png",
+      "at": 15.727069666,
+      "sha256": "c6a8ffb715fd7f983e2119d34f867ae31932ca0cbfe479ec54764819f9d8b2ef",
+      "width": 3840,
+      "height": 2160,
+      "edit": "Hold preceding genuine frame during capture/reload flash",
+      "original_sha256": "dbe74c0d2f2877cc0d3c10c72b64d73fec23a7639149c4ba7dd5c0f8ef7a9127"
+    },
+    {
+      "file": "/Users/matt/hackathon/liftcheck/artifacts/widescreen-recording/frames/frame-00010.png",
+      "at": 35.404637708,
+      "sha256": "c1049cd1c56a691649c17bc0d1f3098cc4263316e07e6476e7c927c235f7af40",
+      "width": 3840,
+      "height": 2160,
+      "edit": "Hold preceding genuine frame during capture/reload flash",
+      "original_sha256": "00f3c2c06f68ae02da72c75fa5336e99b9db67e54edb05f246ea7e871cc63ce2"
+    }
+  ],
+  "duration_preserved": true,
+  "app_pixels_fabricated": false,
+  "caption_timing": "Sentence timings proportional to measured narration segment durations; independently reviewed"
+}

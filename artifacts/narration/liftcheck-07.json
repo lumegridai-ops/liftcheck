@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-27T03:22:28Z",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Confident, thoughtful and conversational; brisk natural pacing, about 165 words per minute. Natural emphasis on the consequence of each action. No sales voice and no theatrical pauses. Speak only the exact transcript.",
+  "text": "LiftCheck. Check the path. Recheck the workaround. Source and reproducible tests are linked.",
+  "seconds": 6.0,
+  "sample_rate": 24000,
+  "sha256": "767bdd9638726174aefd97a7ed5eb0a25a4aee4a3ea8b519cb0091c08740d778",
+  "elapsed_seconds": 15.94,
+  "usage": {
+    "total_tokens": 212,
+    "total_input_tokens": 20,
+    "input_tokens_by_modality": [
+      {
+        "modality": "text",
+        "tokens": 20
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 192,
+    "output_tokens_by_modality": [
+      {
+        "modality": "audio",
+        "tokens": 192
+      }
+    ],
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 375,
+    "model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 134
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 152
+          }
+        ]
+      }
+    ],
+    "non_grounding_model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 134
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 152
+          }
+        ]
+      }
+    ]
+  },
+  "provider": "Google Gemini API",
+  "synthetic": true
+}

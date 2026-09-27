@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-27T03:17:18Z",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Thoughtful and conversational, with a lightly curious final question. Brisk natural pacing, about 165 words per minute. No sales voice, no theatrical pauses. Speak only the exact transcript.",
+  "text": "An elevator is closed. The workaround uses two more. What if one of those is closed too?",
+  "seconds": 5.52,
+  "sample_rate": 24000,
+  "sha256": "5b82baaca7a5fe93c8b71111580dd834073d045b539fb20c54b7f824373e5465",
+  "elapsed_seconds": 77.6,
+  "usage": {
+    "total_tokens": 198,
+    "total_input_tokens": 21,
+    "input_tokens_by_modality": [
+      {
+        "modality": "text",
+        "tokens": 21
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 177,
+    "output_tokens_by_modality": [
+      {
+        "modality": "audio",
+        "tokens": 177
+      }
+    ],
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 374,
+    "model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 132
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 140
+          }
+        ]
+      }
+    ],
+    "non_grounding_model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 132
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 140
+          }
+        ]
+      }
+    ]
+  },
+  "provider": "Google Gemini API",
+  "synthetic": true
+}

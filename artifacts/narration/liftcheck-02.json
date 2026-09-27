@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-27T03:18:47Z",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Confident, thoughtful and conversational; brisk natural pacing, about 165 words per minute. Natural emphasis on the consequence of each action. No sales voice and no theatrical pauses. Speak only the exact transcript.",
+  "text": "Close the second one, and the alternative disappears. Expire the reports, and the answer becomes unknown. No stale green light.",
+  "seconds": 8.36,
+  "sample_rate": 24000,
+  "sha256": "0674ce0bb5f2a08321b9e5242e178f5fed0d11aee116f16bfaaf819b3a6226b7",
+  "elapsed_seconds": 8.91,
+  "usage": {
+    "total_tokens": 295,
+    "total_input_tokens": 27,
+    "input_tokens_by_modality": [
+      {
+        "modality": "text",
+        "tokens": 27
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 268,
+    "output_tokens_by_modality": [
+      {
+        "modality": "audio",
+        "tokens": 268
+      }
+    ],
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 389,
+    "model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 141
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 211
+          }
+        ]
+      }
+    ],
+    "non_grounding_model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 141
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 211
+          }
+        ]
+      }
+    ]
+  },
+  "provider": "Google Gemini API",
+  "synthetic": true
+}

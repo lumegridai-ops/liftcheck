@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-09-27T03:18:37Z",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Confident, thoughtful and conversational; brisk natural pacing, about 165 words per minute. Natural emphasis on the consequence of each action. No sales voice and no theatrical pauses. Speak only the exact transcript.",
+  "text": "LiftCheck checks the mapped station path. In this labeled replay, closing Assembly's Foley Street elevator reveals a different entrance. Its two elevators are checked as part of the alternative.",
+  "seconds": 10.92,
+  "sample_rate": 24000,
+  "sha256": "faf5ee8309ae073be64a18c766c4f814e76d8605a69870920208a26841fcd21c",
+  "elapsed_seconds": 6.15,
+  "usage": {
+    "total_tokens": 387,
+    "total_input_tokens": 37,
+    "input_tokens_by_modality": [
+      {
+        "modality": "text",
+        "tokens": 37
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 350,
+    "output_tokens_by_modality": [
+      {
+        "modality": "audio",
+        "tokens": 350
+      }
+    ],
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 409,
+    "model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 151
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 275
+          }
+        ]
+      }
+    ],
+    "non_grounding_model_invocation_token_counts": [
+      {
+        "prompt_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 151
+          },
+          {
+            "modality": "audio",
+            "tokens": 201
+          }
+        ],
+        "candidates_tokens_details": [
+          {
+            "modality": "text",
+            "tokens": 275
+          }
+        ]
+      }
+    ]
+  },
+  "provider": "Google Gemini API",
+  "synthetic": true
+}

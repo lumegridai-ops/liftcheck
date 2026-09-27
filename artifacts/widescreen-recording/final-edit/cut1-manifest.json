@@ -1,0 +1,207 @@
+{
+  "recordedAt": "2026-09-27T03:33:59.595Z",
+  "file": "liftcheck-demo-4k.mp4",
+  "actual_browser_interactions": true,
+  "synthetic_outages_visibly_labeled": true,
+  "narration": {
+    "provider": "Google Gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "Sulafat",
+    "synthetic": true
+  },
+  "browserErrors": [],
+  "mcp_responses": 12,
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 51,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1203712,
+        "duration": "78.366667",
+        "bit_rate": "650911",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2351",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc62.11.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 3761808,
+        "duration": "78.371000",
+        "bit_rate": "171619",
+        "nb_frames": "3674",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/matt/hackathon/liftcheck/artifacts/liftcheck-demo-4k.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "78.371000",
+      "size": "8145730",
+      "bit_rate": "831504",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    }
+  },
+  "sha256": "1caf65bce9990729ad9fa96bfcbf82fa3c082777dc55aa184d73821a7b4dafcb",
+  "timeline": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 6.17,
+      "text": "An elevator is closed. The workaround uses two more. What if one of those is closed too?"
+    },
+    {
+      "index": 1,
+      "start": 6.170125666,
+      "end": 17.990224833,
+      "text": "LiftCheck checks the mapped station path. In this labeled replay, closing Assembly's Foley Street elevator reveals a different entrance. Its two elevators are checked as part of the alternative."
+    },
+    {
+      "index": 2,
+      "start": 17.990233790999998,
+      "end": 27.249864041000002,
+      "text": "Close the second one, and the alternative disappears. Expire the reports, and the answer becomes unknown. No stale green light."
+    },
+    {
+      "index": 3,
+      "start": 27.2498815,
+      "end": 39.269959750000005,
+      "text": "Now switch to current M B T A reports. Pick the entrance and platform you actually use. Results show mapped facilities, source times, and any missing evidence."
+    },
+    {
+      "index": 4,
+      "start": 39.269968625000004,
+      "end": 50.130673,
+      "text": "Save those choices as a journey. Reload, and they're still there. Up to four station checks share one alert snapshot, instead of mixing evidence collected at different times."
+    },
+    {
+      "index": 5,
+      "start": 50.13068175,
+      "end": 59.790169708,
+      "text": "These are real calls to our self-hosted M C P server. The browser and the assistant-facing tools use the same path logic and saved context."
+    },
+    {
+      "index": 6,
+      "start": 59.790177,
+      "end": 71.17087329099999,
+      "text": "The prototype covers three stations and checks published reports. It does not certify physical access. Alexa device use and rider testing remain unverified."
+    },
+    {
+      "index": 7,
+      "start": 71.17092,
+      "end": 78.37092,
+      "text": "LiftCheck. Check the path. Recheck the workaround. Source and reproducible tests are linked."
+    }
+  ],
+  "source_frames": 16,
+  "source_resolution": [
+    3840,
+    2160
+  ],
+  "delivery_fps": 30,
+  "source_sampling": "Native PNG frames sampled at up to 12.5fps; measured actual timestamps and held frames, not motion interpolation"
+}

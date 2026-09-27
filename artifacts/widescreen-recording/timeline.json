@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "start": 0,
+    "end": 6.17,
+    "text": "An elevator is closed. The workaround uses two more. What if one of those is closed too?"
+  },
+  {
+    "index": 1,
+    "start": 6.170125666,
+    "end": 17.990224833,
+    "text": "LiftCheck checks the mapped station path. In this labeled replay, closing Assembly's Foley Street elevator reveals a different entrance. Its two elevators are checked as part of the alternative."
+  },
+  {
+    "index": 2,
+    "start": 17.990233790999998,
+    "end": 27.249864041000002,
+    "text": "Close the second one, and the alternative disappears. Expire the reports, and the answer becomes unknown. No stale green light."
+  },
+  {
+    "index": 3,
+    "start": 27.2498815,
+    "end": 39.269959750000005,
+    "text": "Now switch to current M B T A reports. Pick the entrance and platform you actually use. Results show mapped facilities, source times, and any missing evidence."
+  },
+  {
+    "index": 4,
+    "start": 39.269968625000004,
+    "end": 50.130673,
+    "text": "Save those choices as a journey. Reload, and they're still there. Up to four station checks share one alert snapshot, instead of mixing evidence collected at different times."
+  },
+  {
+    "index": 5,
+    "start": 50.13068175,
+    "end": 59.790169708,
+    "text": "These are real calls to our self-hosted M C P server. The browser and the assistant-facing tools use the same path logic and saved context."
+  },
+  {
+    "index": 6,
+    "start": 59.790177,
+    "end": 71.17087329099999,
+    "text": "The prototype covers three stations and checks published reports. It does not certify physical access. Alexa device use and rider testing remain unverified."
+  },
+  {
+    "index": 7,
+    "start": 71.17092,
+    "end": 78.37092,
+    "text": "LiftCheck. Check the path. Recheck the workaround. Source and reproducible tests are linked."
+  }
+]

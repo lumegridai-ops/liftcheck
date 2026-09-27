@@ -1,0 +1,16 @@
+{
+  "project": "liftcheck",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "Warm, clear American English product narration. Confident, thoughtful and conversational; brisk natural pacing, about 165 words per minute. Natural emphasis on the consequence of each action. No sales voice and no theatrical pauses. Speak only the exact transcript.",
+  "segments": [
+    "An elevator is closed. The workaround uses two more. What if one of those is closed too?",
+    "LiftCheck checks the mapped station path. In this labeled replay, closing Assembly's Foley Street elevator reveals a different entrance. Its two elevators are checked as part of the alternative.",
+    "Close the second one, and the alternative disappears. Expire the reports, and the answer becomes unknown. No stale green light.",
+    "Now switch to current M B T A reports. Pick the entrance and platform you actually use. Results show mapped facilities, source times, and any missing evidence.",
+    "Save those choices as a journey. Reload, and they're still there. Up to four station checks share one alert snapshot, instead of mixing evidence collected at different times.",
+    "These are real calls to our self-hosted M C P server. The browser and the assistant-facing tools use the same path logic and saved context.",
+    "The prototype covers three stations and checks published reports. It does not certify physical access. Alexa device use and rider testing remain unverified.",
+    "LiftCheck. Check the path. Recheck the workaround. Source and reproducible tests are linked."
+  ]
+}
