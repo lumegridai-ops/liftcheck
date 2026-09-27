@@ -46,7 +46,7 @@ The prototype passes 48 engine/adapter/reviewer/transport checks and 5 browser s
 
 ## Limits and next work
 
-This is a three-station local prototype. Outdoor paths, entrance hours, slopes, gate widths, train operation and boarding assistance are not verified. “No reported closure” is not an accessibility guarantee. Real riders and real Alexa devices have not tested it. Before expanding, the next work is supervised rider workflow research, account-linked remote deployment and comparison against the official MBTA/Transit workflow for the same saved station task.
+This is a three-station prototype with a [public OpenAI Sites demo](https://liftcheck.dgkv.chatgpt.site). The same engine and real MCP tools run remotely; browser-scoped saved journeys are persisted separately. Outdoor paths, entrance hours, slopes, gate widths, train operation and boarding assistance are not verified. “No reported closure” is not an accessibility guarantee. Real riders and real Alexa devices have not tested it. Before expanding, the next work is supervised rider workflow research, remote Alexa account linking and comparison against the official MBTA/Transit workflow for the same saved station task.
 
 All work was produced with AI assistance, including coding, independent agent review, interface design and Google Gemini synthetic video narration. No customer endorsements, physical station checks or performance advantage over competing apps are claimed.
 

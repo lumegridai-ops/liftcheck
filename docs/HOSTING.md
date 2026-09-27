@@ -17,7 +17,7 @@ The public endpoint rejects cross-origin browser requests and bodies over 32KB. 
 - A separate workerd run with a real local D1 binding exercised protocol 2025-11-25, six tools, save/read/isolation and a real complete MBTA fetch. See [the runtime receipt](../artifacts/hosted-runtime-qa.json).
 - Independent review found that a Strict cookie would be replaced after returning from an external entry link. The hosted cookie now uses Lax while mutation requests still enforce the exact Origin and JSON content type.
 
-The hosted additions are separate from the v0.2.0 recording. Public deployment and its final access check are recorded after publication.
+The hosted additions are separate from the v0.2.0 recording. The public deployment succeeded at https://liftcheck.dgkv.chatgpt.site. An anonymous HTTP check returned 200 without sign-in, negotiated MCP 2025-11-25, discovered all six tools, reproduced alternative → blocked → unknown, saved and reloaded a journey, verified a second visitor saw an empty list, and fetched a complete current MBTA snapshot. [Public check receipt](../artifacts/public-hosting-qa.json).
 
 ## Reproduce
 

@@ -8,6 +8,10 @@ The working prototype covers **Assembly, State and Malden Center**. It checks ma
 
 The **v0.2.0** interface and demonstration are prepared. The new approximately **78.37-second** demo uses native **3840×2160** browser captures, 30fps video delivery and disclosed **Google Gemini synthetic narration**. It starts with labeled invented outages, then switches to actual current reports, saved-journey persistence and the working MCP connection. [Timed captions](artifacts/liftcheck-demo-4k.srt) and the [recording manifest](artifacts/widescreen-demo-manifest.json) accompany the local master at `artifacts/liftcheck-demo-4k.mp4`. [Watch the public 4K demo](https://www.youtube.com/watch?v=jHp5xAW9RQM) or [download the master and source media](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.2.0). **[Submitted to the Amazon Alexa+ track](https://devpost.com/software/liftcheck) on September 27, 2026 at 04:22 UTC.**
 
+## Try it online
+
+[Open LiftCheck](https://liftcheck.dgkv.chatgpt.site) — hosted on OpenAI Sites, with no sign-in required. The public version uses the actual MCP tools and live MBTA feed. Saved journeys are isolated by browser; clearing cookies loses access. The remote endpoint is `https://liftcheck.dgkv.chatgpt.site/api/mcp`. See [hosting and verification](docs/HOSTING.md).
+
 ## Run it
 
 Node.js 22 or newer is required. No model key or MBTA API key is needed for the current low-volume experiment.

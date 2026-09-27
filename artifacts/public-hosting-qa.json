@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-27T04:41:34.779Z",
+  "url": "https://liftcheck.dgkv.chatgpt.site",
+  "anonymousStatus": 200,
+  "signInRequired": false,
+  "protocol": "2025-11-25",
+  "tools": 6,
+  "replayStatuses": [
+    "alternate_entrance",
+    "blocked",
+    "unknown"
+  ],
+  "savedReload": true,
+  "visitorIsolation": true,
+  "liveSource": {
+    "mode": "live",
+    "fetchedAt": "2026-09-27T04:41:34.745Z",
+    "evaluatedAt": "2026-09-27T04:41:34.745Z",
+    "complete": true,
+    "url": "https://api-v3.mbta.com/alerts?filter%5Bactivity%5D=ALL&page%5Blimit%5D=1000",
+    "pageCount": 1,
+    "responseHash": "6abf261b8770595adda85d7c2e03b206968b923e0b4fbce3f35e0d9743b058c7",
+    "scenario": null,
+    "label": "Current MBTA alerts fetched by LiftCheck.",
+    "error": null,
+    "validUntil": "2026-09-27T04:46:34.745Z"
+  },
+  "status": "no_reported_closure"
+}

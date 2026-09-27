@@ -53,6 +53,6 @@ The independent review preserves its initial failures in REVIEW.md. Fixes cover 
 
 ## Not established
 
-No physical station survey, wheelchair-user study, screen-reader session with a user, Alexa device integration, remote account linking, production hosting, end-to-end transit journey, or competitor task benchmark was performed. Keyboard-friendly native form controls, escaping and phone layout checks are not a complete accessibility audit. Passing tests do not predict prize placement.
+No physical station survey, wheelchair-user study, screen-reader session with a user, Alexa device integration, remote account linking, end-to-end transit journey, or competitor task benchmark was performed. The later OpenAI Sites deployment and its separate hosted checks are documented in [HOSTING.md](HOSTING.md). Keyboard-friendly native form controls, escaping and phone layout checks are not a complete accessibility audit. Passing tests do not predict prize placement.
 
 The current graph has a finite service-date window, and the source feed can lag or omit a real barrier. Every result preserves these limits. The local server is deliberately single-user and rejects foreign hosts/origins; public deployment needs authentication and operational work.
