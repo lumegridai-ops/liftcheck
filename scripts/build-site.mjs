@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {build} from 'esbuild';
 
 const entries=[['/','public/index.html','text/html; charset=utf-8'],['/app.js','public/app.js','text/javascript; charset=utf-8'],['/style.css','public/style.css','text/css; charset=utf-8'],['/fonts/IBMPlexSans-Variable.ttf','public/fonts/IBMPlexSans-Variable.ttf','font/ttf'],['/fonts/OFL.txt','public/fonts/OFL.txt','text/plain; charset=utf-8']];
+entries.push(['/wayfinding.css','public/wayfinding.css','text/css; charset=utf-8']);
 const assets={};
 for(const [url,file,type] of entries){
   const bytes=await readFile(file); const binary=file.endsWith('.ttf');let body=binary?bytes.toString('base64'):bytes.toString();

@@ -1,0 +1,78 @@
+/* A transit checking surface: route strip, station report, separate replay controls. */
+:root{--ink:#111827;--muted:#475569;--paper:#f0f3f7;--navy:#11233f;--accent:#275dfa;--line:#cbd5e1;--radius:0;color-scheme:light}
+body{background:var(--paper)}
+.masthead{background:#101c31;border-bottom:5px solid #386cff}
+.masthead-inner{height:70px;max-width:1380px}
+.brand-mark{background:#dce8ff;border-radius:0}
+.brand-period{color:#7ca3ff}
+.header-meta,.prototype{font-size:.875rem}
+main{max-width:1380px}
+.intro{padding:28px 0 24px;align-items:end}
+.intro .eyebrow{font-size:.75rem;letter-spacing:.1em;margin-bottom:9px}
+h1{font-size:clamp(1.8rem,3.2vw,3rem);line-height:1.12;letter-spacing:-.04em;margin-bottom:12px;font-weight:650}
+.lede{font-size:1rem}
+.coverage-link{font-size:.875rem;line-height:1.7;flex-shrink:0;text-decoration:none;text-align:right}
+.coverage-link span{color:var(--muted);text-decoration:underline}
+.workspace{display:block}
+.planner{display:contents}
+.form-panel{border:0;border-top:4px solid #11233f;border-bottom:1px solid var(--line);border-radius:0;padding:22px 24px;margin-bottom:24px}
+.form-panel .panel-heading{margin-bottom:16px}
+.section-index{background:#11233f;border:0;color:white;border-radius:0;font-size:.75rem;width:28px;height:28px}
+#check-form{display:grid;grid-template-columns:.8fr 1.1fr 1.1fr;gap:14px 20px;align-items:end}
+.route-field{min-width:0}
+.route-field label{margin:0 0 7px;font-size:.875rem}
+select,input:not([type=radio]){border-radius:2px;font-size:1rem}
+.direction{margin:0;grid-column:1;min-width:0}
+.direction legend{font-size:.875rem;margin-bottom:7px}
+.direction-options{gap:6px}
+.direction label{font-size:.875rem;padding:9px;min-width:0;border-radius:2px}
+.direction label>span:last-child{display:none}
+.direction label:has(input:checked){background:#e6efff;border-color:#275dfa}
+.primary{grid-column:2;background:#1645d1;border-radius:2px;font-size:1rem;min-height:48px}
+.primary:hover{background:#1038ae}
+.form-note{font-size:.875rem;line-height:1.45;margin:0;grid-column:3;padding-bottom:3px}
+.add-leg{font-size:.875rem;margin-top:17px;padding-top:12px;min-height:44px}
+.save-form{max-width:760px}
+.results-area{border-top:1px solid #a7b8ce;padding-top:18px}
+.result-toolbar{margin-bottom:10px}
+.report-source{border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:0}
+.source-pill,#report-timing{font-size:.875rem;letter-spacing:0}
+.empty-state{border:0;border-radius:0;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px;padding:32px;background:#fff}
+.empty-route{grid-row:1/4;align-self:center;margin:20px 0 30px;max-width:none}
+.empty-state>.eyebrow{display:none}
+.empty-state h2{font-size:1.75rem;letter-spacing:-.03em}
+.empty-state>p:not(.eyebrow){font-size:1rem;max-width:none;margin-bottom:0}
+.empty-facts{display:none}
+.route-label{font-size:.875rem}
+.check-card{border:0;border-radius:0;border-left:5px solid #275dfa;margin:0 0 18px;padding:24px 28px 0}
+.check-card h2{font-size:2.5rem;letter-spacing:-.04em;font-weight:650}
+.check-kicker,.card-provenance,.check-endpoints,.status-badge{font-size:.875rem}
+.result-summary,.result-limit{font-size:1rem;line-height:1.55}
+.path-box{border-radius:0;background:#edf3ff;border-color:#bdcee8}
+.path-box.alternative{background:#fff7e7}
+.path-box h3{font-size:1rem}.path-tag,.chain-type{font-size:.75rem}
+.chain-label{font-size:1rem}.path-note{font-size:.875rem}
+.chain-number{border-radius:0}.chain-node.elevator .chain-number{border-radius:0;background:#1645d1;color:white}
+.closure p,.recovery-link,.evidence summary,.evidence .limitations,.report-context{font-size:.875rem}
+.closure small,.closure a,.evidence pre{font-size:.75rem}
+.evidence{background:#f9fbfd}.result-limit{padding-bottom:10px}
+.replay-panel{border:1px solid #a5b4c8;border-left:5px solid #41526b;background:#e5ebf3;border-radius:0;padding:22px 24px;margin-top:24px}
+.replay-panel h2{font-size:1.25rem;font-weight:650;letter-spacing:0}
+.replay-panel>p:not(.replay-footnote){font-size:1rem}
+.replay-heading .eyebrow,.simulation-label,.replay-footnote{font-size:.75rem;letter-spacing:.02em}
+.replay-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.replay-buttons button{border-radius:2px;min-height:66px;background:white;font-size:1rem}
+.replay-buttons button>span:not(.scenario-icon){font-size:.875rem}
+.replay-buttons button.selected{background:#11233f;color:white}
+.journey-tools{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:24px}
+.saved-panel{margin:0;border-radius:0;padding:20px 24px;background:#fff}
+.saved-check,.muted,.text-button,.connection,.connection summary,.draft-leg-name,.leg-action{font-size:.875rem}
+.saved-check small,.small-label,.connection code,.saved-edit,.draft-heading>span{font-size:.75rem}
+.connection{padding:12px 20px;margin:0;border:1px solid var(--line);background:#f9fbfd;align-self:start}
+.connection summary{min-height:44px}.coverage{grid-template-columns:1fr 2fr;margin-top:30px}
+.coverage .eyebrow{font-size:.75rem}.coverage>div:last-child{font-size:1rem}
+footer,footer p:nth-child(2),footer>a{font-size:.75rem}.error,.selection-note,.replay-banner,.expired-banner{font-size:1rem}
+@media(max-width:900px){.intro{display:block}.coverage-link{display:block;text-align:left;margin-top:16px;font-size:.875rem}#check-form{grid-template-columns:1fr 1fr}.route-field:first-child{grid-column:1/-1}.direction{grid-column:1}.primary{grid-column:2}.form-note{grid-column:1/-1}.empty-state{grid-template-columns:1fr}.empty-route{grid-row:auto;margin-bottom:30px;max-width:480px}.empty-state h2{font-size:1.5rem}.replay-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.masthead-inner{height:62px}.intro{padding:22px 0}.header-meta{display:none}.form-panel{padding:18px 16px}#check-form{grid-template-columns:1fr;gap:15px}.route-field,.route-field:first-child,.direction,.primary,.form-note{grid-column:1}.direction-options{grid-template-columns:1fr 1fr}.form-note{margin-top:0}.primary{margin-top:2px}.journey-tools{grid-template-columns:1fr}.result-toolbar{flex-wrap:wrap}.export-button{font-size:.875rem}.report-source{gap:8px}.empty-state{padding:24px 18px}.empty-route{margin-top:12px}.route-label{font-size:.75rem}.check-card{padding:22px 18px 0}.evidence{margin:18px -18px 0;padding:0 18px}.check-card h2{font-size:2rem}.replay-panel{padding:18px 16px}.coverage{grid-template-columns:1fr}.small-label{font-size:.75rem}.saved-panel .panel-heading{flex-wrap:wrap}.path-chain{flex-direction:column}.path-box{padding:16px}.chain-node{min-height:68px}.chain-label{max-width:100%;overflow-wrap:anywhere}.coverage h2{font-size:1.5rem}.replay-buttons button{min-height:72px}}
+/* Reflow long labels at increased text sizes. */
+.replay-heading{flex-wrap:wrap;gap:12px}.simulation-label{max-width:100%;white-space:normal;overflow-wrap:anywhere}

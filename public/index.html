@@ -7,6 +7,7 @@
   <title>LiftCheck — Check the way in</title>
   <link rel="preload" href="/fonts/IBMPlexSans-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/wayfinding.css">
   <script type="module" src="/app.js"></script>
 </head>
 <body>
@@ -17,18 +18,18 @@
   </div></header>
   <main id="main">
     <section class="intro" aria-labelledby="page-title">
-      <div><p class="eyebrow">A LITTLE MORE CERTAINTY BEFORE YOU LEAVE</p><h1 id="page-title">Check the way in.</h1><p class="lede">Your entrance. Your platform. <span>The elevators between them.</span></p></div>
-      <div class="coverage-note"><span class="coverage-number">03</span><div><strong>Stations in this prototype</strong><p>Assembly · State · Malden Center</p><a href="#coverage">See what’s covered <span aria-hidden="true">↗</span></a></div></div>
+      <div><p class="eyebrow">BOSTON · STEP-FREE STATION CONNECTIONS</p><h1 id="page-title">Which way to the platform?</h1><p class="lede">Check the elevators on your exact station path.</p></div>
+      <a class="coverage-link" href="#coverage">Assembly / State / Malden Center<br><span>3 mapped stations · View coverage</span></a>
     </section>
     <div class="workspace">
       <aside class="planner" aria-label="Plan your station check">
         <section class="panel form-panel" aria-labelledby="form-title">
-          <div class="panel-heading"><span class="section-index" aria-hidden="true">01</span><h2 id="form-title">Choose your path</h2></div>
+          <div class="panel-heading"><span class="section-index" aria-hidden="true">01</span><h2 id="form-title">Your station path</h2></div>
           <p id="edit-note" class="edit-note" hidden></p>
           <form id="check-form">
-            <label for="station">Station</label><select id="station" name="station" required></select>
-            <label for="entrance">Street entrance</label><select id="entrance" name="entrance" required></select>
-            <label for="platform">Platform &amp; direction</label><select id="platform" name="platform" required></select>
+            <div class="route-field"><label for="station">Station</label><select id="station" name="station" required></select></div>
+            <div class="route-field"><label for="entrance">Street entrance</label><select id="entrance" name="entrance" required></select></div>
+            <div class="route-field"><label for="platform">Platform &amp; direction</label><select id="platform" name="platform" required></select></div>
             <fieldset class="direction"><legend>I’m…</legend><div class="direction-options"><label><input type="radio" name="direction" value="boarding" checked><span>Boarding</span><span aria-hidden="true">↗</span></label><label><input type="radio" name="direction" value="exiting"><span>Exiting</span><span aria-hidden="true">↙</span></label></div></fieldset>
             <button id="check-live" class="primary" type="submit">Check current reports <span aria-hidden="true">↗</span></button>
             <p class="form-note">A missing closure report does not confirm an elevator is working.</p>
@@ -43,8 +44,6 @@
             <div class="button-row"><button id="save-journey" type="submit" class="secondary">Save journey</button><button type="button" id="clear-pending" class="text-button">Clear</button></div>
           </form>
         </section>
-        <section class="panel saved-panel"><div class="panel-heading"><h2>Saved journeys</h2><span class="small-label">ON THIS DEVICE</span></div><div id="saved-list"><p class="muted">Loading saved journeys…</p></div></section>
-        <details class="connection"><summary>Use with an AI assistant</summary><p>Connect an MCP client to this local server. This page uses the same working tools to check station paths.</p><code id="mcp-address"></code><p>Alexa device and voice testing have not been performed.</p></details>
       </aside>
       <section class="results-area" id="station-results" aria-label="Station check results">
         <div class="result-toolbar"><div class="result-heading"><span class="section-index" aria-hidden="true">02</span><h2 id="report-title">Your path report</h2></div><button id="export" class="text-button export-button" disabled type="button">Download evidence <span aria-hidden="true">↓</span></button></div>
@@ -54,13 +53,13 @@
         <div id="results" aria-busy="false">
           <section class="empty-state">
             <div class="empty-route" aria-hidden="true"><span class="route-end">A</span><span class="route-line"></span><span class="route-lift">↕</span><span class="route-line"></span><span class="route-end">B</span><span class="route-label start">Street entrance</span><span class="route-label middle">Every elevator</span><span class="route-label end">Your platform</span></div>
-            <p class="eyebrow">THE CONNECTIONS MATTER</p><h2>One station.<br>More than one way through.</h2><p>Choose the entrance and platform you use. We’ll check the mapped path, show the elevator reports that affect it, and inspect alternatives when a closure gets in the way.</p>
+            <p class="eyebrow">THE CONNECTIONS MATTER</p><h2>Your next check starts here.</h2><p>Choose your entrance and platform above, then check current reports. Every result shows its elevator dependencies and when the source was fetched.</p>
             <div class="empty-facts"><span><b>01</b> Check your path</span><span><b>02</b> Review dependencies</span><span><b>03</b> Inspect the evidence</span></div>
           </section>
         </div>
         <section class="replay-panel" aria-labelledby="replay-title">
-          <div class="replay-heading"><p class="eyebrow">DEMONSTRATION LAB</p><span class="simulation-label">SYNTHETIC ALERTS</span></div>
-          <h2 id="replay-title">What if the alternative closes, too?</h2><p>Follow one Assembly path as its elevator dependencies change. Real station map. Invented outages.</p>
+          <div class="replay-heading"><p class="eyebrow">REPLAY CONTROLS</p><span class="simulation-label">SYNTHETIC ALERTS</span></div>
+          <h2 id="replay-title">Test the two-elevator failure</h2><p>Follow one Assembly path as its elevator dependencies change. Real station map. Invented outages.</p>
           <div class="replay-buttons" role="group" aria-label="Synthetic Assembly outage scenarios">
             <button type="button" data-scenario="clear" aria-pressed="false">1 <span>No closures</span><span class="scenario-icon" aria-hidden="true">→</span></button>
             <button type="button" data-scenario="primary" aria-pressed="false">2 <span>Close elevator 717</span><span class="scenario-icon" aria-hidden="true">↗</span></button>
@@ -70,6 +69,10 @@
           <p class="replay-footnote">Fixed September 26, 2026 replay · Never a current departure check</p>
         </section>
       </section>
+    </div>
+    <div class="journey-tools">
+        <section class="panel saved-panel"><div class="panel-heading"><h2>Saved journeys</h2><span class="small-label">ON THIS DEVICE</span></div><div id="saved-list"><p class="muted">Loading saved journeys…</p></div></section>
+        <details class="connection"><summary>Use with an AI assistant</summary><p>Connect an MCP client to this local server. This page uses the same working tools to check station paths.</p><code id="mcp-address"></code><p>Alexa device and voice testing have not been performed.</p></details>
     </div>
     <section id="coverage" class="coverage" aria-labelledby="coverage-title"><div><p class="eyebrow">USE THE EVIDENCE WITH CARE</p><h2 id="coverage-title">A station path check.<br>A piece of your journey.</h2></div><div><p>LiftCheck checks mapped stair-free connections at Assembly, State and Malden Center. It does not verify sidewalks, gate width, slopes, boarding assistance, train operation or real-time physical access.</p><p>For assistance and official travel guidance, use <a href="https://www.mbta.com/accessibility" target="_blank" rel="noopener noreferrer">MBTA accessibility information <span aria-hidden="true">↗</span></a>.</p></div></section>
     <footer><p class="footer-brand">LiftCheck<span aria-hidden="true">.</span></p><p>Transportation data provided by <a href="https://www.mass.gov/massdot-developers-data-sources" target="_blank" rel="noopener noreferrer">MassDOT / MBTA</a>.<br>Independent prototype. Not endorsed by the data provider.</p><a href="#main">Back to station check <span aria-hidden="true">↑</span></a></footer>
