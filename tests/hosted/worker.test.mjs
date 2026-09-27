@@ -20,7 +20,7 @@ function database() {
 const base='https://liftcheck.example';
 const leg={stationId:'place-astao',fromId:'door-astao-foley',toId:'70278'};
 function rpc(db,cookie,name,args={},extra={}) {
-  return worker.fetch(new Request(base+'/mcp',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json, text/event-stream','MCP-Protocol-Version':'2025-11-25',Cookie:cookie,...extra},body:JSON.stringify({jsonrpc:'2.0',id:1,method:name.startsWith('tools/')||name==='initialize'?name:'tools/call',params:name==='initialize'?{protocolVersion:'2025-11-25',capabilities:{},clientInfo:{name:'test',version:'1'}}:name==='tools/list'?{}:{name,arguments:args}})}),{DB:db});
+  return worker.fetch(new Request(base+'/api/mcp',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json, text/event-stream','MCP-Protocol-Version':'2025-11-25',Cookie:cookie,...extra},body:JSON.stringify({jsonrpc:'2.0',id:1,method:name.startsWith('tools/')||name==='initialize'?name:'tools/call',params:name==='initialize'?{protocolVersion:'2025-11-25',capabilities:{},clientInfo:{name:'test',version:'1'}}:name==='tools/list'?{}:{name,arguments:args}})}),{DB:db});
 }
 async function cookie() {return (await worker.fetch(new Request(base+'/'),{})).headers.get('set-cookie').split(';')[0];}
 async function tool(db,c,name,args) {const r=await rpc(db,c,name,args);assert.equal(r.status,200);return (await r.json()).result;}
@@ -55,10 +55,10 @@ test('hosted boundary rejects foreign origins, large bodies, invalid JSON and ex
   const db=database(),c=await cookie();
   assert.equal((await rpc(db,c,'get_saved_journeys',{}, {Origin:'https://evil.example'})).status,403);
   for(const body of ['[]','{bad',JSON.stringify({oversized:'x'.repeat(33000)})]) {
-    const result=await worker.fetch(new Request(base+'/mcp',{method:'POST',headers:{'Content-Type':'application/json'},body}),{DB:db});assert.equal(result.status,400);
+    const result=await worker.fetch(new Request(base+'/api/mcp',{method:'POST',headers:{'Content-Type':'application/json'},body}),{DB:db});assert.equal(result.status,400);
   }
   assert.equal((await worker.fetch(new Request(base+'/api/tools/save_journey'),{DB:db})).status,404);
-  assert.equal((await worker.fetch(new Request(base+'/mcp'),{DB:db})).status,405);
+  assert.equal((await worker.fetch(new Request(base+'/api/mcp'),{DB:db})).status,405);
   db.sql.close();
 });
 test('opaque cookie and hosting copy accurately describe browser scope',async()=>{

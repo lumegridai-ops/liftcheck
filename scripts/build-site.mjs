@@ -7,6 +7,7 @@ for(const [url,file,type] of entries){
   const bytes=await readFile(file); const binary=file.endsWith('.ttf');let body=binary?bytes.toString('base64'):bytes.toString();
   if(url==='/') body=body.replace('Local prototype','Hosted prototype').replace('Connect an MCP client to this local server.','Connect an MCP client to this server.');
   if(url==='/') body=body.replace('<div id="saved-list"','<p class="muted">Saved for this browser using a private cookie. Clearing cookies loses access; other browsers have separate journeys.</p><div id="saved-list"');
+  if(url==='/app.js') body=body.replaceAll('/mcp','/api/mcp');
   assets[url]={body,type,encoding:binary?'base64':'text'};
 }
 await writeFile('hosted/assets.generated.mjs',`export default ${JSON.stringify(assets)};\n`);

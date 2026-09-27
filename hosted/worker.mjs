@@ -61,7 +61,7 @@ export default {
       const id=url.pathname==='/'?await identity(request):null;
       return finish(new Response(body,{headers:{'Content-Type':a.type}}),id?.cookie);
     }
-    if (url.pathname!=='/mcp') return finish(error(404,'Not found.'));
+    if (url.pathname!=='/api/mcp') return finish(error(404,'Not found.'));
     if (request.method!=='POST') return finish(error(405,'This stateless MCP endpoint accepts POST.'));
     const id=await identity(request);
     try {

@@ -4,6 +4,8 @@ The hosted version uses the same graph engine, MBTA source validation, real MCP 
 
 Each anonymous browser receives a 256-bit random, HttpOnly, Secure, SameSite=Lax cookie. Only its SHA-256 digest scopes D1 rows. Every journey lookup and conditional revision write uses that scope. Opening a second browser starts a separate workspace. Clearing or expiring the cookie loses access; there is no account recovery or cross-device synchronization. The 30-day cookie lifetime is not a promise that database rows are deleted on that date.
 
+The hosted MCP URL is `/api/mcp`; the local server continues to use `/mcp`. Sites reserves the root MCP route for its own connector integration.
+
 External MCP clients must retain their own cookie to reuse saved journeys. They do not inherit a browser's journeys. Remote Alexa account linking and device testing remain unperformed.
 
 The public endpoint rejects cross-origin browser requests and bodies over 32KB. A per-browser budget allows 90 MCP requests per minute. Fresh cookies can bypass that budget; this is a bounded public prototype, not hardened abuse prevention. MBTA fetches share the existing 60-second cache within a Worker instance. There are no model keys or generated transit answers.
