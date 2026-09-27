@@ -1,4 +1,3 @@
-import { randomUUID } from 'node:crypto';
 import { z } from 'zod';
 import { evaluatePath, stationCatalog } from './engine.mjs';
 import { replaySnapshot } from './alerts.mjs';
@@ -40,7 +39,7 @@ export class LiftCheckService {
   }
   report(legs, snapshot, journeyName) {
     return {
-      id: randomUUID(), createdAt: new Date().toISOString(), journeyName,
+      id: crypto.randomUUID(), createdAt: new Date().toISOString(), journeyName,
       source: {
         mode: snapshot.sourceMode, fetchedAt: snapshot.fetchedAt, evaluatedAt: snapshot.now,
         complete: snapshot.complete, url: snapshot.sourceUrl, pageCount: snapshot.pageCount,
@@ -70,7 +69,7 @@ export class LiftCheckService {
       const item = this.validateLeg(parsed);
       return this.report([item], await this.source.snapshot(), 'Station check');
     }
-    const journey = this.store.read().journeys.find(row => row.id === parsed.journeyId);
+    const journey = (await this.store.read()).journeys.find(row => row.id === parsed.journeyId);
     if (!journey) throw new Error('This saved journey does not exist. Refresh the saved list.');
     journey.legs.forEach(item => this.validateLeg(item));
     return this.report(journey.legs, await this.source.snapshot(), journey.name);

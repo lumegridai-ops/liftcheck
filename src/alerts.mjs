@@ -1,5 +1,3 @@
-import { createHash } from 'node:crypto';
-
 export const ALERT_URL = 'https://api-v3.mbta.com/alerts?filter%5Bactivity%5D=ALL&page%5Blimit%5D=1000';
 const TTL_MS = 60_000;
 
@@ -56,7 +54,7 @@ export async function fetchCompleteAlerts(fetchImpl = fetch, clock = () => new D
       return {
         alerts, complete: true, fetchedAt: clock().toISOString(), sourceUrl: ALERT_URL,
         sourceMode: 'live', pageCount: page + 1,
-        responseHash: createHash('sha256').update(JSON.stringify(alerts)).digest('hex'),
+        responseHash: Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(alerts)))), byte => byte.toString(16).padStart(2, '0')).join(''),
       };
     }
     url = next;

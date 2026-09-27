@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-27T04:34:01.215Z",
+  "runtime": "workerd with real local D1 binding",
+  "protocol": "2025-11-25",
+  "tools": 6,
+  "persistence": true,
+  "visitorIsolation": true,
+  "source": {
+    "mode": "live",
+    "fetchedAt": "2026-09-27T04:34:01.206Z",
+    "evaluatedAt": "2026-09-27T04:34:01.207Z",
+    "complete": true,
+    "url": "https://api-v3.mbta.com/alerts?filter%5Bactivity%5D=ALL&page%5Blimit%5D=1000",
+    "pageCount": 1,
+    "responseHash": "3c6098904400fa62bb6a64b8741e2a1e8ef6e14f86440b959920b7bed9280b26",
+    "scenario": null,
+    "label": "Current MBTA alerts fetched by LiftCheck.",
+    "error": null,
+    "validUntil": "2026-09-27T04:39:01.206Z"
+  },
+  "status": "no_reported_closure"
+}
