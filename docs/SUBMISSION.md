@@ -1,6 +1,6 @@
 # Prepared Amazon entry — LiftCheck
 
-Status: **v0.2.0** source, redesigned working prototype and revised 4K demonstration are prepared. **No Devpost draft or submission has been created.** User authorization to prepare and submit has been given. Required personal answers are recorded privately. Acceptance of the registration rules and eligibility declaration remains pending; it is not an unknown personal-history question. Final registration and submission must not be claimed before confirmation.
+Status: **Submitted** to the Amazon Alexa+ track. Devpost confirmed submission **1200369**, project **1446292**, at **2026-09-27 04:22:06 UTC**. A separate live project read confirmed its published state and hackathon submission timestamp. [Official entry](https://devpost.com/software/liftcheck). The user reaffirmed the previously presented registration confirmations; registration and required declarations were completed with the confirmed answers.
 
 Repository: https://github.com/lumegridai-ops/liftcheck
 
@@ -64,5 +64,5 @@ We built a real SDK transport test to verify negotiation of the specified protoc
 - Public YouTube URL for the revised demonstration: https://www.youtube.com/watch?v=jHp5xAW9RQM; 2160p and English captions verified.
 - v0.2.0 release includes the master video, captions and original source-media archive.
 - Employee declaration: confirmed by the user. Amazon developer account: none.
-- Registration rules and eligibility consent: pending acceptance. No new unknown personal-history facts are asserted.
-- Official submission confirmation: none. Do not describe this entry as submitted.
+- Registration rules and eligibility consent: reaffirmed by the user and accepted during registration.
+- Official submission: **Submitted**, ID 1200369; published project and timestamp independently read back. Three actual screenshots and the 4K video are attached.

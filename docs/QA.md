@@ -31,7 +31,7 @@ The new sequence opens with synthetic elevator 717 closure → second closure of
 
 The source is native 4K browser imagery from actual interactions, with capture timing and held frames. It is not claimed to contain 30 independent browser captures per second or interpolated motion. The manifest identifies the narration provider as **Google Gemini**, model `gemini-3.8-flash-tts`, voice `Sulafat`; all narration is disclosed synthetic speech. It does not impersonate a rider or Alexa. [Timed captions](../artifacts/liftcheck-demo-4k.srt) are included.
 
-The revised [YouTube video](https://www.youtube.com/watch?v=jHp5xAW9RQM) was published and its anonymous oEmbed response matched the uploaded title. The watch-page menu offered 2160p 4K; the uploaded English caption track rendered. The original source frames remain preserved. Two approximately 0.1-second capture/reload flashes are replaced with the preceding genuine frame, preserving duration; 9–17.9 seconds uses a 1.33× editorial crop that retains source and uncertainty labels. See [media provenance](MEDIA.md). This is video publication, not a Devpost submission.
+The revised [YouTube video](https://www.youtube.com/watch?v=jHp5xAW9RQM) was published and its anonymous oEmbed response matched the uploaded title. The watch-page menu offered 2160p 4K; the uploaded English caption track rendered. The original source frames remain preserved. Two approximately 0.1-second capture/reload flashes are replaced with the preceding genuine frame, preserving duration; 9–17.9 seconds uses a 1.33× editorial crop that retains source and uncertainty labels. See [media provenance](MEDIA.md). The video publication was verified separately from the later Devpost submission.
 
 For historical separation: the earlier v0.1.0 recording was 97.92 seconds and was published on YouTube on September 26, 2026. Its full-decode check and SHA-256 `a046e706ef8de2184ad55f022359914438dd1fde266fb9e9b11d59384d1d4ef8` apply only to `artifacts/liftcheck-demo.mp4`, not to the revised 4K file.
 
@@ -45,7 +45,7 @@ Expired or incomplete live evidence now withdraws the usable path view and forme
 
 ## Entry status
 
-Required personal answers have been received privately. Registration rules and eligibility consent remain pending acceptance. No Devpost draft or submission has been created. A working local MCP endpoint and prepared media do not establish completed registration, remote Alexa account linking or submission.
+The user reaffirmed the previously presented registration confirmations. Registration succeeded, three actual screenshots and a thumbnail were uploaded, and Devpost returned **Submitted**, submission ID **1200369**, at **2026-09-27 04:22:06 UTC**. A separate live project read confirmed published project **1446292** and the Amazon hackathon submission timestamp. [Official entry](https://devpost.com/software/liftcheck). This submission does not establish remote Alexa account linking.
 
 ## Findings fixed
 
