@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "duration": 78.374,
+  "width": 3840,
+  "height": 2160,
+  "stages": [
+    {
+      "requestedSecond": 0,
+      "actualSecond": 0.104241,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 7.9,
+      "actualSecond": 8.010374,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 18.8,
+      "actualSecond": 18.901842,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 22.3,
+      "actualSecond": 22.401375,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 30.3,
+      "actualSecond": 30.402433,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 41.2,
+      "actualSecond": 41.31363,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 43.1,
+      "actualSecond": 43.216381,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 51,
+      "actualSecond": 51.100928,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 60,
+      "actualSecond": 60.117362,
+      "readyState": 4,
+      "error": null
+    },
+    {
+      "requestedSecond": 74,
+      "actualSecond": 74.100903,
+      "readyState": 4,
+      "error": null
+    }
+  ],
+  "playbackQuality": {},
+  "scope": "Actual Chromium H.264/AAC playback and seeking. No claim of a human audience test or a full real-time listen."
+}

@@ -1,0 +1,428 @@
+{
+  "url": "http://127.0.0.1:4326",
+  "at": "2026-09-27T05:26:06.912Z",
+  "checks": [
+    {
+      "name": "New wayfinding stylesheet is loaded",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Skip link remains first keyboard stop",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Actual current request returns complete live source",
+      "pass": true,
+      "evidence": {
+        "source": {
+          "mode": "live",
+          "fetchedAt": "2026-09-27T05:26:08.210Z",
+          "evaluatedAt": "2026-09-27T05:26:08.212Z",
+          "complete": true,
+          "url": "https://api-v3.mbta.com/alerts?filter%5Bactivity%5D=ALL&page%5Blimit%5D=1000",
+          "pageCount": 1,
+          "responseHash": "25ef0d3380b3921c7e853112463d52a621c959829372977d4c211d7d2fb97f3d",
+          "scenario": null,
+          "label": "Current MBTA alerts fetched by LiftCheck.",
+          "error": null,
+          "validUntil": "2026-09-27T05:31:08.210Z"
+        },
+        "statuses": [
+          "no_reported_closure"
+        ]
+      }
+    },
+    {
+      "name": "Changing chosen path warns old report is retained",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Duplicate draft reports error",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Two-leg journey survives reload",
+      "pass": true,
+      "evidence": "Fictional redesign audit\n2 station checks\n↗\nUse as draft"
+    },
+    {
+      "name": "Saved journey checks both station legs",
+      "pass": true,
+      "evidence": "Fictional redesign audit"
+    },
+    {
+      "name": "Replay primary",
+      "pass": true,
+      "evidence": "Demonstration replay. The map is real; every alert in this result is invented. It is not a current departure check.\n\nSynthetic replay · Sep 26, 12:00 PM EDT · Invented outages\n\nSTATION CHECK 01 / BOARDING\n\nAnother entrance to review\nAssembly\n\nFoley St → Assembly - Orange Line - Forest Hills\n\nThe selected entrance path cannot be confirmed. A different mapped entrance has no reported conflict: Revolution Dr.\n\nAlternative entrance: Revolution Dr\nSYNTHETIC REPLAY\n1\nSTREET ENTRANCE\nRevolution Dr\n↕\nELEVATOR DEPENDENCY\nElevator 718\n↕\nELEVATOR DEPENDENCY\nElevator 719\n4\nPLATFORM\nOrange Line - Forest Hills\n\nfewest mapped edges · 7 mapped connections. Schematic, not walking directions.\n\nBefore changing entrances: travel to or from this different street entrance has not been checked. Review whether that change works for you.\n\ni\nNo reported closure is not confirmation of physical access. Conditions and assistance still need checking.\n\nSimulated outage: Assembly Elevator 717\n\nInvented for this demonstration\nInspect source evidence & limits\n\nAssembly demonstration · Replay evaluated Sep 26, 12:00 PM EDT\nStation pathways only. No check of the journey between entrances, train operation, platform boarding, gate width, slopes, or assistance availability."
+    },
+    {
+      "name": "Replay both",
+      "pass": true,
+      "evidence": "Demonstration replay. The map is real; every alert in this result is invented. It is not a current departure check.\n\nSynthetic replay · Sep 26, 12:00 PM EDT · Invented outages\n\nSTATION CHECK 01 / BOARDING\n\nClosure affects this path\nAssembly\n\nFoley St → Assembly - Orange Line - Forest Hills\n\nReported closures block the selected mapped station path. No checked alternative entrance path was found.\n\nSimulated outage: Assembly Elevator 717\n\nInvented for this demonstration\n\nSimulated outage: Assembly Elevator 719\n\nInvented for this demonstration\n\nReview official MBTA assistance and travel guidance ↗.\n\nInspect source evidence & limits\n\nAssembly demonstration · Replay evaluated Sep 26, 12:00 PM EDT\nStation pathways only. No check of the journey between entrances, train operation, platform boarding, gate width, slopes, or assistance availability."
+    },
+    {
+      "name": "Replay stale",
+      "pass": true,
+      "evidence": "Demonstration replay. The map is real; every alert in this result is invented. It is not a current departure check.\n\nSynthetic replay · Sep 26, 12:00 PM EDT · Invented outages\n\nSTATION CHECK 01 / BOARDING\n\nCould not verify this path\nAssembly\n\nFoley St → Assembly - Orange Line - Forest Hills\n\nThe alert snapshot has expired. Refresh it before checking a path.\n\nReview official MBTA assistance and travel guidance ↗.\n\nInspect source evidence & limits\n\nAssembly demonstration · Replay evaluated Sep 26, 12:00 PM EDT\nStation pathways only. No check of the journey between entrances, train operation, platform boarding, gate width, slopes, or assistance availability."
+    },
+    {
+      "name": "Phone initial layout has no horizontal overflow",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Phone primary action returns live result",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Phone 200 percent text reflows without horizontal overflow",
+      "pass": false,
+      "evidence": [
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "simulation-label",
+          "text": "SYNTHETIC ALERTS"
+        }
+      ]
+    },
+    {
+      "name": "Phone 200 percent text does not prevent a current check",
+      "pass": true,
+      "evidence": {}
+    },
+    {
+      "name": "Desktop 200 percent text has no document horizontal overflow",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "observations": [
+    {
+      "name": "desktop layout",
+      "evidence": {
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "elements": {
+          "#page-title": {
+            "top": 128.796875,
+            "bottom": 180.390625,
+            "width": 541.546875,
+            "height": 51.59375,
+            "font": "46.08px"
+          },
+          "#check-form": {
+            "top": 310.390625,
+            "bottom": 472.390625,
+            "width": 1252,
+            "height": 162,
+            "font": "16px"
+          },
+          "#check-live": {
+            "top": 424.390625,
+            "bottom": 472.390625,
+            "width": 444.40625,
+            "height": 48,
+            "font": "16px"
+          },
+          "#station-results": {
+            "top": 580.390625,
+            "bottom": 1164.984375,
+            "width": 1300,
+            "height": 584.59375,
+            "font": "16px"
+          },
+          ".replay-panel": {
+            "top": 891.390625,
+            "bottom": 1164.984375,
+            "width": 1300,
+            "height": 273.59375,
+            "font": "16px"
+          },
+          ".journey-tools": {
+            "top": 1188.984375,
+            "bottom": 1347.234375,
+            "width": 1300,
+            "height": 158.25,
+            "font": "16px"
+          }
+        },
+        "overflows": []
+      }
+    },
+    {
+      "name": "lift-desktop axe",
+      "evidence": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 8
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile initial layout",
+      "evidence": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "elements": {
+          "#page-title": {
+            "top": 114.796875,
+            "bottom": 147.046875,
+            "width": 354,
+            "height": 32.25,
+            "font": "28.8px"
+          },
+          "#check-form": {
+            "top": 334.640625,
+            "bottom": 808.234375,
+            "width": 322,
+            "height": 473.59375,
+            "font": "16px"
+          },
+          "#check-live": {
+            "top": 701.640625,
+            "bottom": 749.640625,
+            "width": 322,
+            "height": 48,
+            "font": "16px"
+          },
+          "#station-results": {
+            "top": 912.234375,
+            "bottom": 1778.65625,
+            "width": 354,
+            "height": 866.421875,
+            "font": "16px"
+          },
+          ".replay-panel": {
+            "top": 1355.90625,
+            "bottom": 1778.65625,
+            "width": 354,
+            "height": 422.75,
+            "font": "16px"
+          },
+          ".journey-tools": {
+            "top": 1802.65625,
+            "bottom": 2133.90625,
+            "width": 354,
+            "height": 331.25,
+            "font": "16px"
+          }
+        },
+        "overflows": []
+      }
+    },
+    {
+      "name": "lift-mobile axe",
+      "evidence": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "phone 200 percent text layout",
+      "evidence": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 411,
+        "elements": {
+          "#page-title": {
+            "top": 165.1875,
+            "bottom": 294.1875,
+            "width": 354,
+            "height": 129,
+            "font": "57.6px"
+          },
+          "#check-form": {
+            "top": 711.75,
+            "bottom": 1489.53125,
+            "width": 322,
+            "height": 777.78125,
+            "font": "32px"
+          },
+          "#check-live": {
+            "top": 1229.75,
+            "bottom": 1349.75,
+            "width": 322,
+            "height": 120,
+            "font": "32px"
+          },
+          "#station-results": {
+            "top": 1647.53125,
+            "bottom": 6753.5,
+            "width": 354,
+            "height": 5105.96875,
+            "font": "32px"
+          },
+          ".replay-panel": {
+            "top": 5697.640625,
+            "bottom": 6753.5,
+            "width": 354,
+            "height": 1055.859375,
+            "font": "32px"
+          },
+          ".journey-tools": {
+            "top": 6777.5,
+            "bottom": 7470.84375,
+            "width": 354,
+            "height": 693.34375,
+            "font": "32px"
+          }
+        },
+        "overflows": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "class": "simulation-label",
+            "text": "SYNTHETIC ALERTS"
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop 200 percent text layout",
+      "evidence": {
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "elements": {
+          "#page-title": {
+            "top": 145.59375,
+            "bottom": 352,
+            "width": 828.078125,
+            "height": 206.40625,
+            "font": "92.16px"
+          },
+          "#check-form": {
+            "top": 521.1875,
+            "bottom": 761.1875,
+            "width": 1252,
+            "height": 240,
+            "font": "32px"
+          },
+          "#check-live": {
+            "top": 689.1875,
+            "bottom": 761.1875,
+            "width": 444.40625,
+            "height": 72,
+            "font": "32px"
+          },
+          "#station-results": {
+            "top": 881.1875,
+            "bottom": 3100.203125,
+            "width": 1300,
+            "height": 2219.015625,
+            "font": "32px"
+          },
+          ".replay-panel": {
+            "top": 2644.828125,
+            "bottom": 3100.203125,
+            "width": 1300,
+            "height": 455.375,
+            "font": "32px"
+          },
+          ".journey-tools": {
+            "top": 3124.203125,
+            "bottom": 3500.765625,
+            "width": 1300,
+            "height": 376.5625,
+            "font": "32px"
+          }
+        },
+        "overflows": []
+      }
+    }
+  ],
+  "errors": [],
+  "pageErrors": [],
+  "assets": [
+    {
+      "url": "http://127.0.0.1:4326/style.css",
+      "sha256": "d3201c1dee4c43faa559277b9651f034e7a1e94ff51cead0f892493cc938c212",
+      "bytes": 24103
+    },
+    {
+      "url": "http://127.0.0.1:4326/wayfinding.css",
+      "sha256": "6e3b408599a24d073e7900a939bb17aed2ef12179c9f19cea38c23cd5b5993f6",
+      "bytes": 6694
+    },
+    {
+      "url": "http://127.0.0.1:4326/app.js",
+      "sha256": "07df0acdd29497988ec3664fec4b965ad3ee45b89c5b4dada9ab1537170b6afc",
+      "bytes": 22006
+    },
+    {
+      "url": "http://127.0.0.1:4326/style.css",
+      "sha256": "d3201c1dee4c43faa559277b9651f034e7a1e94ff51cead0f892493cc938c212",
+      "bytes": 24103
+    },
+    {
+      "url": "http://127.0.0.1:4326/wayfinding.css",
+      "sha256": "6e3b408599a24d073e7900a939bb17aed2ef12179c9f19cea38c23cd5b5993f6",
+      "bytes": 6694
+    },
+    {
+      "url": "http://127.0.0.1:4326/app.js",
+      "sha256": "07df0acdd29497988ec3664fec4b965ad3ee45b89c5b4dada9ab1537170b6afc",
+      "bytes": 22006
+    },
+    {
+      "url": "http://127.0.0.1:4326/style.css",
+      "sha256": "d3201c1dee4c43faa559277b9651f034e7a1e94ff51cead0f892493cc938c212",
+      "bytes": 24103
+    },
+    {
+      "url": "http://127.0.0.1:4326/wayfinding.css",
+      "sha256": "6e3b408599a24d073e7900a939bb17aed2ef12179c9f19cea38c23cd5b5993f6",
+      "bytes": 6694
+    },
+    {
+      "url": "http://127.0.0.1:4326/app.js",
+      "sha256": "07df0acdd29497988ec3664fec4b965ad3ee45b89c5b4dada9ab1537170b6afc",
+      "bytes": 22006
+    },
+    {
+      "url": "http://127.0.0.1:4326/style.css",
+      "sha256": "d3201c1dee4c43faa559277b9651f034e7a1e94ff51cead0f892493cc938c212",
+      "bytes": 24103
+    },
+    {
+      "url": "http://127.0.0.1:4326/wayfinding.css",
+      "sha256": "6e3b408599a24d073e7900a939bb17aed2ef12179c9f19cea38c23cd5b5993f6",
+      "bytes": 6694
+    },
+    {
+      "url": "http://127.0.0.1:4326/app.js",
+      "sha256": "07df0acdd29497988ec3664fec4b965ad3ee45b89c5b4dada9ab1537170b6afc",
+      "bytes": 22006
+    }
+  ],
+  "screenshots": [
+    "lift-desktop-first",
+    "lift-desktop-live",
+    "lift-desktop-replay-primary",
+    "lift-desktop-replay-both",
+    "lift-desktop-replay-stale",
+    "lift-mobile-first",
+    "lift-mobile-live",
+    "lift-mobile-text200-result",
+    "lift-mobile-text200-first",
+    "lift-desktop-text200-result",
+    "lift-desktop-text200-first"
+  ],
+  "finishedAt": "2026-09-27T05:26:09.725Z"
+}

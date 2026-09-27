@@ -1,0 +1,582 @@
+{
+  "recordedAt": "2026-09-27T06:00:19.959Z",
+  "file": "liftcheck-wayfinding-demo-4k.mp4",
+  "actual_browser_interactions": true,
+  "isolated_local_server": true,
+  "synthetic_outages_visibly_labeled": true,
+  "sourceHashes": {
+    "server.mjs": "098a6035b65de49799c89fc749730e7b33a85a2a5e5012b20f289c1b6fea8f34",
+    "public/index.html": "696994702672a5cd29141cfb337d55e2e93590f14ff07e28c125a25f29dfb991",
+    "public/app.js": "b4135e9027ab8c924dfcbf787405e76f8345b4f3e75ecb96c3124bd54b06d5cc",
+    "public/style.css": "d3201c1dee4c43faa559277b9651f034e7a1e94ff51cead0f892493cc938c212",
+    "public/wayfinding.css": "89d0aa5026cd382b7fa2f0bc596072dfac0f19f3d04e68594a9beb00ad10d426",
+    "data/network.json": "2c09436a4fa7aaf5aabe3c167f9ec32d157f624bb44da8c7836c856fcba41e38",
+    "src/engine.mjs": "67bdd8862ff03296adba153f89addc373175a2f7447efa6273d7d6c7e11d62c4",
+    "src/service.mjs": "1dc4939bc9e9889aa9fb0537a765d2f8b433d8569822fc897679493e98be416f",
+    "src/mcp.mjs": "d543348ee4a5b3b9b1ada9a5cf1df3a9a40710700dc4d675d1c818c4f51f8b03",
+    "public/fonts/IBMPlexSans-Variable.ttf": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3"
+  },
+  "sourceStable": true,
+  "narration": {
+    "provider": "Google Gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "Sulafat",
+    "synthetic": true,
+    "reused_existing_verified_clips": true
+  },
+  "browserErrors": [],
+  "mcp_responses": 12,
+  "compositionChecks": [
+    {
+      "name": "01-current-ui",
+      "recordingSecond": null,
+      "critical": [
+        {
+          "selector": "#check-live",
+          "text": "Check current reports ↗",
+          "x": 380.53125,
+          "y": 418.65625,
+          "width": 407.734375,
+          "height": 48
+        },
+        {
+          "selector": "#station",
+          "text": "AssemblyStateMalden Center",
+          "x": 64,
+          "y": 332.65625,
+          "width": 296.53125,
+          "height": 48
+        },
+        {
+          "selector": "#entrance",
+          "text": "Foley StRevolution Dr",
+          "x": 380.53125,
+          "y": 332.65625,
+          "width": 407.734375,
+          "height": 48
+        },
+        {
+          "selector": "#platform",
+          "text": "Orange Line - Forest HillsOrange Line - Oak Grove",
+          "x": 808.265625,
+          "y": 332.65625,
+          "width": 407.734375,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "name": "02-alternative",
+      "recordingSecond": 1.567181959,
+      "critical": [
+        {
+          "selector": ".card-provenance",
+          "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+          "x": 73,
+          "y": 38.65625,
+          "width": 1139,
+          "height": 32.59375
+        },
+        {
+          "selector": ".status-badge",
+          "text": "Another entrance to review",
+          "x": 999.03125,
+          "y": 90.25,
+          "width": 212.96875,
+          "height": 31.59375
+        },
+        {
+          "selector": ".path-box.alternative",
+          "text": "Alternative entrance: Revolution DrSYNTHETIC REPLAY1Street entranceRevolution Dr↕Elevator dependencyElevator 718↕Elevator dependencyElevator 7194PlatformOrange Line - Forest Hillsfewest mapped edges · 7 mapped connections. Schematic, not walking directions.Before changing entrances: travel to or from this different street entrance has not been checked. Review whether that change works for you.",
+          "x": 73,
+          "y": 305.125,
+          "width": 1139,
+          "height": 267.9375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Revolution Dr",
+          "x": 94,
+          "y": 420.5,
+          "width": 99.734375,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Elevator 718",
+          "x": 368.25,
+          "y": 420.5,
+          "width": 93.515625,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Elevator 719",
+          "x": 642.5,
+          "y": 420.5,
+          "width": 93.515625,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Orange Line - Forest Hills",
+          "x": 916.75,
+          "y": 420.5,
+          "width": 180,
+          "height": 43.1875
+        },
+        {
+          "selector": ".approach-note",
+          "text": "Before changing entrances: travel to or from this different street entrance has not been checked. Review whether that change works for you.",
+          "x": 94,
+          "y": 519.375,
+          "width": 1097,
+          "height": 34.6875
+        }
+      ]
+    },
+    {
+      "name": "03-blocked",
+      "recordingSecond": 12.341342334,
+      "critical": [
+        {
+          "selector": ".card-provenance",
+          "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+          "x": 73,
+          "y": 38.65625,
+          "width": 1139,
+          "height": 32.59375
+        },
+        {
+          "selector": ".status-badge",
+          "text": "Closure affects this path",
+          "x": 1020.21875,
+          "y": 90.25,
+          "width": 191.78125,
+          "height": 31.59375
+        },
+        {
+          "selector": ".result-summary",
+          "text": "Reported closures block the selected mapped station path. No checked alternative entrance path was found.",
+          "x": 73,
+          "y": 237.53125,
+          "width": 760,
+          "height": 49.59375
+        },
+        {
+          "selector": ".closure",
+          "text": "Simulated outage: Assembly Elevator 717Invented for this demonstration",
+          "x": 73,
+          "y": 304.125,
+          "width": 1139,
+          "height": 57
+        },
+        {
+          "selector": ".closure",
+          "text": "Simulated outage: Assembly Elevator 719Invented for this demonstration",
+          "x": 73,
+          "y": 375.125,
+          "width": 1139,
+          "height": 57
+        }
+      ]
+    },
+    {
+      "name": "04-expired",
+      "recordingSecond": 15.822580624999999,
+      "critical": [
+        {
+          "selector": "#source-pill",
+          "text": "SYNTHETIC OUTAGE REPLAY",
+          "x": 40,
+          "y": 96.65625,
+          "width": 202.03125,
+          "height": 21
+        },
+        {
+          "selector": ".card-provenance",
+          "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+          "x": 73,
+          "y": 209.65625,
+          "width": 1139,
+          "height": 32.59375
+        },
+        {
+          "selector": ".status-badge",
+          "text": "Could not verify this path",
+          "x": 1020.015625,
+          "y": 261.25,
+          "width": 191.984375,
+          "height": 31.59375
+        },
+        {
+          "selector": ".result-summary",
+          "text": "The alert snapshot has expired. Refresh it before checking a path.",
+          "x": 73,
+          "y": 408.53125,
+          "width": 760,
+          "height": 24.796875
+        }
+      ]
+    },
+    {
+      "name": "05-live",
+      "recordingSecond": 23.720947042,
+      "critical": [
+        {
+          "selector": ".card-provenance",
+          "text": "Live reports · fetched Sep 27, 1:59 AM EDT",
+          "x": 73,
+          "y": 38.65625,
+          "width": 1139,
+          "height": 32.59375
+        },
+        {
+          "selector": ".status-badge",
+          "text": "No reported closure",
+          "x": 1052.96875,
+          "y": 90.25,
+          "width": 159.03125,
+          "height": 31.59375
+        },
+        {
+          "selector": ".path-box",
+          "text": "Mapped path inspectedDEPENDENCY VIEW1Street entranceRevolution Dr↕Elevator dependencyElevator 718↕Elevator dependencyElevator 7194PlatformOrange Line - Forest Hillsfewest mapped edges · 7 mapped connections. Schematic, not walking directions.",
+          "x": 73,
+          "y": 305.125,
+          "width": 1139,
+          "height": 216.25
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Revolution Dr",
+          "x": 94,
+          "y": 420.5,
+          "width": 99.734375,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Elevator 718",
+          "x": 368.25,
+          "y": 420.5,
+          "width": 93.515625,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Elevator 719",
+          "x": 642.5,
+          "y": 420.5,
+          "width": 93.515625,
+          "height": 21.59375
+        },
+        {
+          "selector": ".chain-label",
+          "text": "Orange Line - Forest Hills",
+          "x": 916.75,
+          "y": 420.5,
+          "width": 180,
+          "height": 43.1875
+        },
+        {
+          "selector": ".result-limit",
+          "text": "iNo reported closure is not confirmation of physical access. Conditions and assistance still need checking.",
+          "x": 73,
+          "y": 539.375,
+          "width": 1139,
+          "height": 34.796875
+        }
+      ]
+    },
+    {
+      "name": "06-journey-draft",
+      "recordingSecond": 34.693466167000004,
+      "critical": [
+        {
+          "selector": "#pending-legs",
+          "text": "1. AssemblyRevolution Dr → Orange Line - Forest HillsEditRemove↑↓",
+          "x": 64,
+          "y": 120.65625,
+          "width": 760,
+          "height": 105.5
+        },
+        {
+          "selector": "#journey-name",
+          "text": "",
+          "x": 64,
+          "y": 300.953125,
+          "width": 760,
+          "height": 48
+        },
+        {
+          "selector": "#save-journey",
+          "text": "Save journey",
+          "x": 64,
+          "y": 362.953125,
+          "width": 106.828125,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "07-saved-after-reload",
+      "recordingSecond": 36.617844958999996,
+      "critical": [
+        {
+          "selector": ".saved-item",
+          "text": "My morning station1 station check↗Use as draft",
+          "x": 65,
+          "y": 297.4375,
+          "width": 635.984375,
+          "height": 87
+        }
+      ]
+    },
+    {
+      "name": "08-mcp-connection",
+      "recordingSecond": 44.000341959,
+      "critical": [
+        {
+          "selector": ".connection",
+          "text": "Use with an AI assistantConnect an MCP client to this local server. This page uses the same working tools to check station paths.http://127.0.0.1:58851/mcpAlexa device and voice testing have not been performed.",
+          "x": 749.984375,
+          "y": 196.546875,
+          "width": 490,
+          "height": 209
+        },
+        {
+          "selector": "#mcp-address",
+          "text": "http://127.0.0.1:58851/mcp",
+          "x": 770.984375,
+          "y": 315.546875,
+          "width": 448,
+          "height": 36
+        },
+        {
+          "selector": ".saved-item",
+          "text": "My morning station1 station check↗Use as draft",
+          "x": 65,
+          "y": 246.734375,
+          "width": 635.984375,
+          "height": 87
+        }
+      ]
+    },
+    {
+      "name": "09-scope",
+      "recordingSecond": 53.682524959000006,
+      "critical": [
+        {
+          "selector": "#coverage",
+          "text": "USE THE EVIDENCE WITH CAREA station path check.A piece of your journey.LiftCheck checks mapped stair-free connections at Assembly, State and Malden Center. It does not verify sidewalks, gate width, slopes, boarding assistance, train operation or real-time physical access.For assistance and official travel guidance, use MBTA accessibility information ↗.",
+          "x": 40,
+          "y": 435.546875,
+          "width": 1200,
+          "height": 188.75
+        },
+        {
+          "selector": "footer",
+          "text": "LiftCheck.Transportation data provided by MassDOT / MBTA.Independent prototype. Not endorsed by the data provider.Back to station check ↑",
+          "x": 40,
+          "y": 624.296875,
+          "width": 1200,
+          "height": 95.375
+        }
+      ]
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 51,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1203712,
+        "duration": "78.366667",
+        "bit_rate": "586314",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2351",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc62.11.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 1,
+        "channel_layout": "mono",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 3761952,
+        "duration": "78.374000",
+        "bit_rate": "171429",
+        "nb_frames": "3674",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/matt/hackathon/research/portfolio-audit-20260927/video-refresh/liftcheck-final/liftcheck-wayfinding-demo-4k.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "78.374000",
+      "size": "7511087",
+      "bit_rate": "766691",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf62.3.100"
+      }
+    }
+  },
+  "sha256": "3e32b3d65b7db1b6cdb390cf5fc924310c52e3bd350d25d30bccc678b3508f13",
+  "timeline": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 6.17,
+      "text": "An elevator is closed. The workaround uses two more. What if one of those is closed too?"
+    },
+    {
+      "index": 1,
+      "start": 6.17013,
+      "end": 17.990465917,
+      "text": "LiftCheck checks the mapped station path. In this labeled replay, closing Assembly's Foley Street elevator reveals a different entrance. Its two elevators are checked as part of the alternative."
+    },
+    {
+      "index": 2,
+      "start": 17.990477,
+      "end": 27.251603250000002,
+      "text": "Close the second one, and the alternative disappears. Expire the reports, and the answer becomes unknown. No stale green light."
+    },
+    {
+      "index": 3,
+      "start": 27.251613167000002,
+      "end": 39.27242579199999,
+      "text": "Now switch to current M B T A reports. Pick the entrance and platform you actually use. Results show mapped facilities, source times, and any missing evidence."
+    },
+    {
+      "index": 4,
+      "start": 39.272434458999996,
+      "end": 50.13368075,
+      "text": "Save those choices as a journey. Reload, and they're still there. Up to four station checks share one alert snapshot, instead of mixing evidence collected at different times."
+    },
+    {
+      "index": 5,
+      "start": 50.13368895900001,
+      "end": 59.793297542000005,
+      "text": "These are real calls to our self-hosted M C P server. The browser and the assistant-facing tools use the same path logic and saved context."
+    },
+    {
+      "index": 6,
+      "start": 59.793304791999994,
+      "end": 71.17394208399999,
+      "text": "The prototype covers three stations and checks published reports. It does not certify physical access. Alexa device use and rider testing remain unverified."
+    },
+    {
+      "index": 7,
+      "start": 71.174005209,
+      "end": 78.374005209,
+      "text": "LiftCheck. Check the path. Recheck the workaround. Source and reproducible tests are linked."
+    }
+  ],
+  "source_frames": 36,
+  "source_resolution": [
+    3840,
+    2160
+  ],
+  "delivery_fps": 30,
+  "source_sampling": "Native PNG frames sampled at up to 12.5fps; measured actual timestamps and held frames, not motion interpolation"
+}

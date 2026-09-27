@@ -60,3 +60,9 @@ Existing labels retained: **Check current reports**, **+ Add this check to a sav
 Source mode and fetch time repeat inside `.card-provenance`; the replay dependency box is separately marked **SYNTHETIC REPLAY**. The heading `#report-title` follows the selected saved journey or demonstration. Draft controls have explicit accessible names such as “Edit check 2: Assembly” and “Move check 2 up.”
 
 No claim is made of screen-reader usability, WCAG conformance, field navigation success, accessibility clearance, validated superiority to MBTA’s tools, or Alexa voice/device testing. Browser review covered Chromium, not Safari or Firefox. The contrast check does not assess every possible dynamic state, forced colors, browser zoom or assistive-technology combination. Those remain practical next checks before broader use.
+
+## September 27 custom composition
+
+The current design is a navy/blue transit worksheet: horizontal station/entrance/platform selection, full-width dated path report, then saved journeys and connection details. It replaces the large hero/sidebar composition. Its mobile report stacks the route vertically, retains written source mode and wraps enlarged replay labels. The backend and MCP contracts remain unchanged.
+
+The independent review exercised live source retrieval, both saved legs after reload, duplicate-save recovery, all three replay outcomes, desktop/390px layouts and doubled text. A missing deployed stylesheet and an enlarged-phone replay-label overflow were observed and fixed. Four bounded axe scans across the two portfolio apps reported no violations, with some contrast checks still incomplete; this is not an accessibility certification. See [current evidence in QA](QA.md#september-27-portfolio-recheck).

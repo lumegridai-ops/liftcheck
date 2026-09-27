@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-27T05:29:40.815Z",
+  "checks": [
+    {
+      "name": "Lift final phone text200 wraps replay label without document overflow",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "replayHeader": "wrap"
+      }
+    },
+    {
+      "name": "Closet settled Escape focus after try-on refresh returns to opener",
+      "pass": true,
+      "evidence": {
+        "tag": "BUTTON",
+        "id": "",
+        "action": "sample-preview",
+        "text": "Open try-on demo"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "name": "Closet laptop first viewport",
+      "evidence": {
+        "width": 1280,
+        "height": 720,
+        "itemsTop": 760.78125,
+        "approveTop": 1000.375,
+        "choiceTop": 543.78125
+      }
+    }
+  ]
+}

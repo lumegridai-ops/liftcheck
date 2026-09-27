@@ -1,0 +1,360 @@
+[
+  {
+    "name": "01-current-ui",
+    "recordingSecond": null,
+    "critical": [
+      {
+        "selector": "#check-live",
+        "text": "Check current reports ↗",
+        "x": 380.53125,
+        "y": 418.65625,
+        "width": 407.734375,
+        "height": 48
+      },
+      {
+        "selector": "#station",
+        "text": "AssemblyStateMalden Center",
+        "x": 64,
+        "y": 332.65625,
+        "width": 296.53125,
+        "height": 48
+      },
+      {
+        "selector": "#entrance",
+        "text": "Foley StRevolution Dr",
+        "x": 380.53125,
+        "y": 332.65625,
+        "width": 407.734375,
+        "height": 48
+      },
+      {
+        "selector": "#platform",
+        "text": "Orange Line - Forest HillsOrange Line - Oak Grove",
+        "x": 808.265625,
+        "y": 332.65625,
+        "width": 407.734375,
+        "height": 48
+      }
+    ]
+  },
+  {
+    "name": "02-alternative",
+    "recordingSecond": 1.567181959,
+    "critical": [
+      {
+        "selector": ".card-provenance",
+        "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+        "x": 73,
+        "y": 38.65625,
+        "width": 1139,
+        "height": 32.59375
+      },
+      {
+        "selector": ".status-badge",
+        "text": "Another entrance to review",
+        "x": 999.03125,
+        "y": 90.25,
+        "width": 212.96875,
+        "height": 31.59375
+      },
+      {
+        "selector": ".path-box.alternative",
+        "text": "Alternative entrance: Revolution DrSYNTHETIC REPLAY1Street entranceRevolution Dr↕Elevator dependencyElevator 718↕Elevator dependencyElevator 7194PlatformOrange Line - Forest Hillsfewest mapped edges · 7 mapped connections. Schematic, not walking directions.Before changing entrances: travel to or from this different street entrance has not been checked. Review whether that change works for you.",
+        "x": 73,
+        "y": 305.125,
+        "width": 1139,
+        "height": 267.9375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Revolution Dr",
+        "x": 94,
+        "y": 420.5,
+        "width": 99.734375,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Elevator 718",
+        "x": 368.25,
+        "y": 420.5,
+        "width": 93.515625,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Elevator 719",
+        "x": 642.5,
+        "y": 420.5,
+        "width": 93.515625,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Orange Line - Forest Hills",
+        "x": 916.75,
+        "y": 420.5,
+        "width": 180,
+        "height": 43.1875
+      },
+      {
+        "selector": ".approach-note",
+        "text": "Before changing entrances: travel to or from this different street entrance has not been checked. Review whether that change works for you.",
+        "x": 94,
+        "y": 519.375,
+        "width": 1097,
+        "height": 34.6875
+      }
+    ]
+  },
+  {
+    "name": "03-blocked",
+    "recordingSecond": 12.341342334,
+    "critical": [
+      {
+        "selector": ".card-provenance",
+        "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+        "x": 73,
+        "y": 38.65625,
+        "width": 1139,
+        "height": 32.59375
+      },
+      {
+        "selector": ".status-badge",
+        "text": "Closure affects this path",
+        "x": 1020.21875,
+        "y": 90.25,
+        "width": 191.78125,
+        "height": 31.59375
+      },
+      {
+        "selector": ".result-summary",
+        "text": "Reported closures block the selected mapped station path. No checked alternative entrance path was found.",
+        "x": 73,
+        "y": 237.53125,
+        "width": 760,
+        "height": 49.59375
+      },
+      {
+        "selector": ".closure",
+        "text": "Simulated outage: Assembly Elevator 717Invented for this demonstration",
+        "x": 73,
+        "y": 304.125,
+        "width": 1139,
+        "height": 57
+      },
+      {
+        "selector": ".closure",
+        "text": "Simulated outage: Assembly Elevator 719Invented for this demonstration",
+        "x": 73,
+        "y": 375.125,
+        "width": 1139,
+        "height": 57
+      }
+    ]
+  },
+  {
+    "name": "04-expired",
+    "recordingSecond": 15.822580624999999,
+    "critical": [
+      {
+        "selector": "#source-pill",
+        "text": "SYNTHETIC OUTAGE REPLAY",
+        "x": 40,
+        "y": 96.65625,
+        "width": 202.03125,
+        "height": 21
+      },
+      {
+        "selector": ".card-provenance",
+        "text": "Synthetic replay · Sep 26, 12:00 PM EDT · Invented outages",
+        "x": 73,
+        "y": 209.65625,
+        "width": 1139,
+        "height": 32.59375
+      },
+      {
+        "selector": ".status-badge",
+        "text": "Could not verify this path",
+        "x": 1020.015625,
+        "y": 261.25,
+        "width": 191.984375,
+        "height": 31.59375
+      },
+      {
+        "selector": ".result-summary",
+        "text": "The alert snapshot has expired. Refresh it before checking a path.",
+        "x": 73,
+        "y": 408.53125,
+        "width": 760,
+        "height": 24.796875
+      }
+    ]
+  },
+  {
+    "name": "05-live",
+    "recordingSecond": 23.720947042,
+    "critical": [
+      {
+        "selector": ".card-provenance",
+        "text": "Live reports · fetched Sep 27, 1:59 AM EDT",
+        "x": 73,
+        "y": 38.65625,
+        "width": 1139,
+        "height": 32.59375
+      },
+      {
+        "selector": ".status-badge",
+        "text": "No reported closure",
+        "x": 1052.96875,
+        "y": 90.25,
+        "width": 159.03125,
+        "height": 31.59375
+      },
+      {
+        "selector": ".path-box",
+        "text": "Mapped path inspectedDEPENDENCY VIEW1Street entranceRevolution Dr↕Elevator dependencyElevator 718↕Elevator dependencyElevator 7194PlatformOrange Line - Forest Hillsfewest mapped edges · 7 mapped connections. Schematic, not walking directions.",
+        "x": 73,
+        "y": 305.125,
+        "width": 1139,
+        "height": 216.25
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Revolution Dr",
+        "x": 94,
+        "y": 420.5,
+        "width": 99.734375,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Elevator 718",
+        "x": 368.25,
+        "y": 420.5,
+        "width": 93.515625,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Elevator 719",
+        "x": 642.5,
+        "y": 420.5,
+        "width": 93.515625,
+        "height": 21.59375
+      },
+      {
+        "selector": ".chain-label",
+        "text": "Orange Line - Forest Hills",
+        "x": 916.75,
+        "y": 420.5,
+        "width": 180,
+        "height": 43.1875
+      },
+      {
+        "selector": ".result-limit",
+        "text": "iNo reported closure is not confirmation of physical access. Conditions and assistance still need checking.",
+        "x": 73,
+        "y": 539.375,
+        "width": 1139,
+        "height": 34.796875
+      }
+    ]
+  },
+  {
+    "name": "06-journey-draft",
+    "recordingSecond": 34.693466167000004,
+    "critical": [
+      {
+        "selector": "#pending-legs",
+        "text": "1. AssemblyRevolution Dr → Orange Line - Forest HillsEditRemove↑↓",
+        "x": 64,
+        "y": 120.65625,
+        "width": 760,
+        "height": 105.5
+      },
+      {
+        "selector": "#journey-name",
+        "text": "",
+        "x": 64,
+        "y": 300.953125,
+        "width": 760,
+        "height": 48
+      },
+      {
+        "selector": "#save-journey",
+        "text": "Save journey",
+        "x": 64,
+        "y": 362.953125,
+        "width": 106.828125,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "07-saved-after-reload",
+    "recordingSecond": 36.617844958999996,
+    "critical": [
+      {
+        "selector": ".saved-item",
+        "text": "My morning station1 station check↗Use as draft",
+        "x": 65,
+        "y": 297.4375,
+        "width": 635.984375,
+        "height": 87
+      }
+    ]
+  },
+  {
+    "name": "08-mcp-connection",
+    "recordingSecond": 44.000341959,
+    "critical": [
+      {
+        "selector": ".connection",
+        "text": "Use with an AI assistantConnect an MCP client to this local server. This page uses the same working tools to check station paths.http://127.0.0.1:58851/mcpAlexa device and voice testing have not been performed.",
+        "x": 749.984375,
+        "y": 196.546875,
+        "width": 490,
+        "height": 209
+      },
+      {
+        "selector": "#mcp-address",
+        "text": "http://127.0.0.1:58851/mcp",
+        "x": 770.984375,
+        "y": 315.546875,
+        "width": 448,
+        "height": 36
+      },
+      {
+        "selector": ".saved-item",
+        "text": "My morning station1 station check↗Use as draft",
+        "x": 65,
+        "y": 246.734375,
+        "width": 635.984375,
+        "height": 87
+      }
+    ]
+  },
+  {
+    "name": "09-scope",
+    "recordingSecond": 53.682524959000006,
+    "critical": [
+      {
+        "selector": "#coverage",
+        "text": "USE THE EVIDENCE WITH CAREA station path check.A piece of your journey.LiftCheck checks mapped stair-free connections at Assembly, State and Malden Center. It does not verify sidewalks, gate width, slopes, boarding assistance, train operation or real-time physical access.For assistance and official travel guidance, use MBTA accessibility information ↗.",
+        "x": 40,
+        "y": 435.546875,
+        "width": 1200,
+        "height": 188.75
+      },
+      {
+        "selector": "footer",
+        "text": "LiftCheck.Transportation data provided by MassDOT / MBTA.Independent prototype. Not endorsed by the data provider.Back to station check ↑",
+        "x": 40,
+        "y": 624.296875,
+        "width": 1200,
+        "height": 95.375
+      }
+    ]
+  }
+]
