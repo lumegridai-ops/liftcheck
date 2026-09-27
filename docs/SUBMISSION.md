@@ -4,7 +4,7 @@ Status: **Submitted** to the Amazon Alexa+ track. Devpost confirmed submission *
 
 Repository: https://github.com/lumegridai-ops/liftcheck
 
-Demonstration: approximately **78.37 seconds**, native **3840×2160** browser captures delivered at 30fps, with disclosed Google Gemini synthetic narration. The local master is `artifacts/liftcheck-demo-4k.mp4`; [timed captions](../artifacts/liftcheck-demo-4k.srt) and the [recording manifest](../artifacts/widescreen-demo-manifest.json) accompany it. [Public 4K demonstration](https://www.youtube.com/watch?v=jHp5xAW9RQM) · [v0.2.0 release](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.2.0). The earlier recording is not presented as this new demonstration.
+Demonstration: **78.374 seconds**, native **3840×2160** browser captures delivered at 30fps, with disclosed Google Gemini synthetic narration. The current master is `artifacts/liftcheck-wayfinding-demo-4k.mp4`; [timed captions](../artifacts/liftcheck-wayfinding-demo-4k.srt) and the [recording manifest](../artifacts/wayfinding-video/manifest.json) accompany it. [Current public 4K demonstration](https://www.youtube.com/watch?v=Q-eO-lOigUU) · [v0.3.0 release](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.3.0). Its anonymous playback, English captions and 2160p stream were verified. Devpost readback at 06:28 UTC confirms this video on the still-submitted entry.
 
 **Name:** LiftCheck
 
@@ -60,9 +60,9 @@ We built a real SDK transport test to verify negotiation of the specified protoc
 
 - Working repository with open-source code license, provider-data license, setup/run instructions and verification evidence: prepared.
 - Actual runtime hook to required track technology: implemented and tested through the MCP SDK and visible client.
-- Less-than-three-minute demonstration of the working product: revised native 4K source captures and approximately 78.37-second local master prepared; [captions](../artifacts/liftcheck-demo-4k.srt) included. The final file passed full decode; its hash is recorded in the manifest.
-- Public YouTube URL for the revised demonstration: https://www.youtube.com/watch?v=jHp5xAW9RQM; 2160p and English captions verified.
-- v0.2.0 release includes the master video, captions and original source-media archive.
+- Less-than-three-minute demonstration of the working product: current native 4K source captures and 78.374-second master published; [captions](../artifacts/liftcheck-wayfinding-demo-4k.srt) included. The final file passed full decode; its hash is recorded in the manifest.
+- Public YouTube URL for the current demonstration: https://www.youtube.com/watch?v=Q-eO-lOigUU; anonymous playback, 2160p and English captions verified.
+- v0.3.0 release includes the current master video, captions and original source-media archive. Earlier releases remain historical evidence.
 - Employee declaration: confirmed by the user. Amazon developer account: none.
 - Registration rules and eligibility consent: reaffirmed by the user and accepted during registration.
 - Official submission: **Submitted**, ID 1200369; published project and timestamp independently read back. Three actual screenshots and the 4K video are attached.

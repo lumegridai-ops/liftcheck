@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-09-27T06:28:36Z",
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=Q-eO-lOigUU",
+    "publication": "Studio displayed Video published",
+    "title": "LiftCheck — What if the workaround fails too? | 4K working demo",
+    "visibility": "Public",
+    "captions": "Uploaded reviewed English SRT; Studio showed English by you and rendered captions were observed",
+    "synthetic_content_disclosure": true,
+    "copyright_check": "No issues found",
+    "playback": {
+      "signed_in_watch_page": {
+        "current_time": 33.585678,
+        "duration": 78.401,
+        "video_width": 3840,
+        "video_height": 2160,
+        "ready_state": 4,
+        "error": null
+      },
+      "independent_signed_out_safari": {
+        "sign_in_visible": true,
+        "played_through_seconds": 29,
+        "display_duration": "1:18",
+        "captions_visible": true,
+        "gate_or_error_observed": false,
+        "audio_auditioned": false
+      }
+    },
+    "thumbnail": "Automatic video thumbnail; optional custom thumbnail was phone-verification gated, so no phone verification was attempted."
+  },
+  "master": {
+    "sha256": "3e32b3d65b7db1b6cdb390cf5fc924310c52e3bd350d25d30bccc678b3508f13",
+    "duration": 78.374,
+    "width": 3840,
+    "height": 2160,
+    "release": "https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.3.0"
+  },
+  "devpost": {
+    "project_id": 1446292,
+    "project_url": "https://devpost.com/software/liftcheck",
+    "update_version": 3,
+    "readback_state": "published",
+    "video_url": "https://www.youtube.com/watch?v=Q-eO-lOigUU",
+    "submitted_at": "2026-09-27T00:22:06.637-04:00",
+    "updated_at": "2026-09-27T02:28:30.772-04:00",
+    "testing_link": "https://liftcheck.dgkv.chatgpt.site"
+  },
+  "refreshed_submission": {
+    "confirmed_at": "2026-09-27T06:35:49Z",
+    "submission_id": 1200369,
+    "status": "Submitted",
+    "hackathon_subdomain": "amazonappdev2026",
+    "project_slug": "liftcheck",
+    "submitted_at": "2026-09-27T00:22:06.637-04:00",
+    "url": "https://devpost.com/software/liftcheck"
+  },
+  "submission_refresh_reason": "The browser management form still displayed the earlier video despite the public project update. The existing entry was explicitly re-submitted with the new video and all 18 required answers; Devpost returned Submitted for the same ID.",
+  "limits": [
+    "Public playback was sampled, not every-frame reviewed again.",
+    "IAB was signed in; anonymity was verified separately in native Safari.",
+    "The complete local master had already passed full decode and ten-position review.",
+    "No new listening or audience study is claimed."
+  ]
+}

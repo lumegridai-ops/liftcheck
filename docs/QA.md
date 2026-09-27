@@ -1,5 +1,11 @@
 # Verification record
 
+## Current demonstration publication — September 27, 06:28 UTC
+
+The matching v0.3.0 [wayfinding demonstration](https://www.youtube.com/watch?v=Q-eO-lOigUU) is public and is now the video on the submitted Devpost entry. The public watch page decoded a 3840×2160 stream without errors and rendered the uploaded English captions. A separate signed-out Safari session showed the Sign in control and played through 0:29/1:18 without a gate. This public playback was sampled, not a new full-frame or auditory review; full local-master media QA remains in the [current recording receipt](../artifacts/wayfinding-video/QA.json).
+
+Devpost returned project version 3 after changing only the video URL. A separate read confirmed its published state, new video URL, public testing link and original submission timestamp. The listing thumbnail was separately changed to the actual current interface. The management form still displayed the earlier video, so the same entry was explicitly re-submitted with the new URL, all 18 required answers and updated feedback about the actual hosted build. Devpost again returned **Submitted**, ID 1200369, and preserved the original submission timestamp. The three earlier gallery images remain; an additional gallery upload was interrupted before file selection and no new gallery image is claimed. [Publication receipt](../artifacts/wayfinding-video/publication.json). Earlier video records below remain historical and refer to their explicitly named masters.
+
 Verified September 26, 2026, including the **v0.2.0** interface refinement. This report describes performed checks, not simulated customer use. Final revised-video publication and media-hash confirmation are tracked separately below.
 
 ## Product story

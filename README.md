@@ -6,7 +6,7 @@ LiftCheck combines public MBTA station pathways with current service and equipme
 
 The working prototype covers **Assembly, State and Malden Center**. It checks mapped entrance→platform or platform→exit connections. It does not plan an entire transit journey or certify accessibility.
 
-The **v0.2.0** interface and demonstration are prepared. The new approximately **78.37-second** demo uses native **3840×2160** browser captures, 30fps video delivery and disclosed **Google Gemini synthetic narration**. It starts with labeled invented outages, then switches to actual current reports, saved-journey persistence and the working MCP connection. [Timed captions](artifacts/liftcheck-demo-4k.srt) and the [recording manifest](artifacts/widescreen-demo-manifest.json) accompany the local master at `artifacts/liftcheck-demo-4k.mp4`. [Watch the public 4K demo](https://www.youtube.com/watch?v=jHp5xAW9RQM) or [download the master and source media](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.2.0). **[Submitted to the Amazon Alexa+ track](https://devpost.com/software/liftcheck) on September 27, 2026 at 04:22 UTC.**
+The **v0.3.0** wayfinding interface and matching **78.374-second** demo are published. The recording uses native **3840×2160** browser captures, 30fps video delivery and disclosed **Google Gemini synthetic narration**. It starts with labeled invented outages, then switches to actual current reports, saved-journey persistence and the working MCP connection. [Timed captions](artifacts/liftcheck-wayfinding-demo-4k.srt) and the [recording manifest](artifacts/wayfinding-video/manifest.json) accompany the master. [Watch the current 4K demo](https://www.youtube.com/watch?v=Q-eO-lOigUU) or [download the master and source media](https://github.com/lumegridai-ops/liftcheck/releases/tag/v0.3.0). **[Submitted to the Amazon Alexa+ track](https://devpost.com/software/liftcheck) on September 27, 2026 at 04:22 UTC.** The matching video and new listing thumbnail are attached to that entry; anonymous playback and the 2160p stream were checked separately.
 
 ## Try it online
 
@@ -69,7 +69,7 @@ npx playwright install chromium
 npm run test:browser
 ```
 
-The redesigned **v0.2.0** interface passes the existing **48 Node tests and five browser stories**. Tests include a real SDK client over HTTP, restart persistence, double-outage withdrawal, alert pagination and malformed-data counterexamples. Browser fixture checks are synthetic and labeled; separate actual live-source observations and the revised demonstration are documented in [the verification record](docs/QA.md).
+The current interface passes the existing **48 Node tests and five browser stories**, plus **five hosted-store/protocol groups**. Tests include a real SDK client over HTTP, restart persistence, double-outage withdrawal, alert pagination and malformed-data counterexamples. Browser fixture checks are synthetic and labeled; separate actual live-source observations and the revised demonstration are documented in [the verification record](docs/QA.md).
 
 Read [the engine notes](docs/ENGINE.md) for exact graph/alert semantics, [the independent review](docs/REVIEW.md) for findings and fixes, and [the interface review](docs/DESIGN_REVIEW.md) for manual draft-flow, keyboard, contrast and 390px/320px checks. Passing checks are engineering evidence, not rider validation, complete accessibility certification or a competitive benchmark.
 
